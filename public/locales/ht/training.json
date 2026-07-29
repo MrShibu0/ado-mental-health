@@ -1,0 +1,32 @@
+{
+  "metaTitle": "Fòmasyon ak Ranfòsman Kapasite | ADO Center",
+  "metaDescription": "Ranfòse kapasite lokal nan domèn sante mantal atravè devlopman pwofesyonèl ak fòmasyon kominotè nan La Gonâve.",
+  "pageTitle": "Fòmasyon ak Ranfòsman Kapasite",
+  "pageSubtitle": "Ranfòse ekspètiz lokal pou bati yon ekosistèm sante mantal ki dirab epi ki bay sipò.",
+  "breadcrumb": "Edikasyon",
+  "sectionTitle": "Ranfòse Kapasite Lokal",
+  "sectionSubtitle": "Sant lan bay kominote a ak pwofesyonèl yo pouvwa atravè edikasyon kontinyèl ak pwogram pou devlope konpetans.",
+  "trainings": [
+    {
+      "title": "Fòmasyon pou Travayè Sante Kominotè",
+      "description": "Fòme travayè premye liy yo pou yo rekonèt, sipòte, ak refere manm kominote ki gen pwoblèm sante mantal."
+    },
+    {
+      "title": "Fòmasyon pou Pwofesè ak Pèsonèl Lekòl",
+      "description": "Bati anviwònman lekòl ki bay sipò, idantifye chanjman nan konpòtman, ak amelyore byennèt elèv yo."
+    },
+    {
+      "title": "Premye Swen Sikolojik",
+      "description": "Ekipe manm kominote a ak pwofesyonèl yo ak konpetans pratik pou reponn a kriz pou sitiyasyon ijans."
+    },
+    {
+      "title": "Sansibilizasyon sou Sante Mantal",
+      "description": "Sesyòn konplè ki fèt pou diminye stigmatizasyon, ogmante konpreyansyon, ak ankouraje enklizyon."
+    },
+    {
+      "title": "Devlopman Pèsonèl Klinik",
+      "description": "Aprantisaj pwofesyonèl kontinyèl, fòmasyon sou etik, ak mizajou sou pratik ki baze sou prèv pou founisè swen sante yo."
+    }
+  ],
+  "imgAlt": "Fòmasyon ak Ranfòsman Kapasite"
+}

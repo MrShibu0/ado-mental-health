@@ -1,0 +1,24 @@
+{
+  "links": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "community": "Communauté",
+    "training": "Formation",
+    "team": "Équipe",
+    "impact": "Impact",
+    "gallery": "Galerie",
+    "faq": "FAQ",
+    "partners": "Partenaires",
+    "news": "Actualités",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "donate": "Faire un don"
+  },
+  "mobile": {
+    "language": "Langue",
+    "close_menu": "Fermer le menu",
+    "open_menu": "Ouvrir le menu principal"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Mental Health Services | ADO Center",
+  "description": "Explore our comprehensive psychological and psychiatric care services available in La Gonâve.",
+  "headerTitle": "Mental Health Services",
+  "headerSubtitle": "Professional care designed to help individuals and families thrive in a safe, confidential environment.",
+  "breadcrumb": "Our Services",
+  "list": {
+    "psychological-assessments": {
+      "title": "Psychological Assessments",
+      "description": "Comprehensive evaluations to identify emotional, behavioral, developmental, and psychological concerns."
+    },
+    "psychiatric-consultations": {
+      "title": "Psychiatric Consultations",
+      "description": "Professional psychiatric evaluation, diagnosis, treatment planning, and medication management."
+    },
+    "individual-therapy": {
+      "title": "Individual Therapy",
+      "description": "Evidence-based counseling for depression, anxiety, trauma, stress, grief, and emotional challenges."
+    },
+    "family-therapy": {
+      "title": "Family Therapy",
+      "description": "Helping families improve communication, relationships, conflict resolution, and support systems."
+    },
+    "group-therapy": {
+      "title": "Group Therapy",
+      "description": "Structured therapeutic group sessions promoting healing, support, and shared learning."
+    },
+    "crisis-intervention": {
+      "title": "Crisis Intervention",
+      "description": "Immediate support for emotional crises, acute distress, and urgent mental health situations."
+    },
+    "substance-use-support": {
+      "title": "Substance Use Support",
+      "description": "Recovery-focused services for individuals affected by addiction and substance use disorders."
+    },
+    "older-adult-care": {
+      "title": "Older Adult Mental Health Care",
+      "description": "Specialized services addressing the psychological and emotional needs of aging populations."
+    }
+  }
+}

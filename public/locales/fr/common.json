@@ -1,0 +1,16 @@
+{
+  "cta": {
+    "title": "Tout le monde mérite d'avoir accès au soutien en santé mentale",
+    "description": "Des soins compatissants, confidentiels et professionnels conçus pour aider les individus et les familles à s'épanouir. Soutenez notre mission dès aujourd'hui.",
+    "getSupport": "Obtenir du soutien",
+    "donateNow": "Faire un don maintenant"
+  },
+  "impact": {
+    "title": "Impact du projet",
+    "subtitle": "Mesurer notre contribution à des individus en meilleure santé, des familles plus fortes et un avenir plus résilient pour La Gonâve."
+  },
+  "partners": {
+    "title": "Construire des communautés plus fortes ensemble",
+    "subtitle": "Le succès de notre centre dépend de la collaboration avec nos partenaires stratégiques et donateurs."
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "title": "À Propos de Nous | ADO Mental Health Center",
+  "description": "Découvrez notre histoire, notre vision et notre mission pour améliorer le bien-être psychologique à La Gonâve.",
+  "hero": {
+    "badge": "À Propos d'ADO Center",
+    "title": "Bâtir des Communautés Plus Fortes et Plus Saines",
+    "subtitle": "Nous nous consacrons à fournir un soutien psychologique et psychosocial accessible et compatissant aux individus et aux familles à travers La Gonâve.",
+    "buttons": {
+      "learnMore": "En Savoir Plus",
+      "contactUs": "Nous Contacter"
+    }
+  },
+  "intro": {
+    "title": "À Propos d'ADO Center",
+    "subtitle": "Bâtir l'espoir, la résilience et des communautés plus saines grâce à un soutien psychologique et psychosocial accessible.",
+    "p1": "ADO Center est une organisation de soutien psychologique et psychosocial axée sur la communauté, dédiée à l'amélioration du bien-être émotionnel et de la qualité de vie des individus et des familles à Anse-à-Galets, La Gonâve, Haïti.",
+    "p2": "Notre organisation croit que la santé mentale est un droit humain fondamental. Nous veillons à ce que les enfants, les adolescents, les adultes, les personnes âgées et les populations vulnérables aient accès à des services de santé mentale compatissants, confidentiels et fondés sur des preuves, indépendamment de leur origine sociale ou économique.",
+    "p3": "À travers le conseil, les soins psychiatriques, le soutien psychosocial, l'éducation et l'engagement communautaire, nous nous efforçons de créer des individus plus sains, des familles plus fortes et des communautés plus résilientes."
+  },
+  "story": {
+    "title": "Notre Histoire",
+    "p1": "ADO Center a été créé en réponse au besoin croissant et critique de services de santé mentale à La Gonâve. La communauté est confrontée à de nombreux défis, notamment la pauvreté, l'accès limité aux soins de santé, l'isolement géographique et les effets persistants des catastrophes naturelles à répétition.",
+    "p2": "Ces défis écrasants ont contribué à l'augmentation des taux de dépression, d'anxiété, de traumatismes psychologiques, de troubles liés à l'usage de substances et d'affections psychiatriques non traitées graves, laissant souvent les individus et les familles sans aucun recours.",
+    "p3": "Animés par la vision de créer des soins de santé mentale accessibles et durables, nous avons entrepris de construire un centre qui fournit non seulement un traitement professionnel, mais s'emploie également activement à réduire la stigmatisation entourant la maladie mentale dans notre culture.",
+    "p4": "Aujourd'hui, nous nous tenons comme un phare d'espoir, apportant des services professionnels de soutien psychologique et psychosocial directement aux personnes qui en ont le plus besoin."
+  },
+  "mission": {
+    "title": "Notre Mission",
+    "text": "Améliorer le bien-être psychologique, renforcer la résilience et élargir l'accès à des services de soutien psychologique et psychosocial de haute qualité pour les individus, les familles et les communautés à travers La Gonâve."
+  },
+  "vision": {
+    "title": "Notre Vision",
+    "text": "Un avenir où chaque individu a accès à des soins de santé mentale compatissants, abordables et culturellement appropriés, donnant aux communautés les moyens de s'épanouir dans la dignité, l'espoir et la résilience."
+  },
+  "founder": {
+    "title": "Notre Fondatrice",
+    "name": "Ruthe Antoine, LCSW, CSSW",
+    "role": "Fondatrice & PDG",
+    "bio1": "Ruthe Antoine a fondé ADO Center avec une vision profonde : s'assurer que personne à La Gonâve n'ait à affronter seul ses problèmes de santé mentale.",
+    "bio2": "Forte d'une vaste expérience en travail social clinique, elle a reconnu le fossé critique dans les services de santé mentale et l'impact dévastateur des traumatismes et de la détresse psychologique non traités au sein de la communauté.",
+    "bio3": "Son engagement en faveur de soins de santé mentale accessibles et compatissants motive la mission du centre à briser les barrières, à éliminer la stigmatisation et à fournir un soutien culturellement adapté qui permet véritablement aux individus et aux familles de guérir et de s'épanouir."
+  },
+  "coreValues": {
+    "title": "Nos Valeurs Fondamentales",
+    "items": {
+      "Compassion": {
+        "title": "Compassion",
+        "desc": "Fournir des soins avec empathie, gentillesse et respect."
+      },
+      "Integrity": {
+        "title": "Intégrité",
+        "desc": "Agir avec honnêteté, transparence et professionnalisme."
+      },
+      "Confidentiality": {
+        "title": "Confidentialité",
+        "desc": "Protéger la vie privée et la confiance de chaque individu."
+      },
+      "Inclusion": {
+        "title": "Inclusion",
+        "desc": "Servir toutes les personnes indépendamment de leur âge, genre, religion ou origine."
+      },
+      "Excellence": {
+        "title": "Excellence",
+        "desc": "Fournir des services de santé mentale de haute qualité, fondés sur des preuves."
+      },
+      "CommunityEmpowerment": {
+        "title": "Autonomisation",
+        "desc": "Renforcer les communautés par l'éducation, la collaboration et la prévention."
+      }
+    }
+  },
+  "guidingPrinciples": {
+    "title": "Nos Principes Directeurs",
+    "items": {
+      "Respect": "Respect",
+      "Dignity": "Dignité",
+      "Equity": "Équité",
+      "Compassion": "Compassion",
+      "Collaboration": "Collaboration",
+      "Accountability": "Responsabilité"
+    }
+  },
+  "whyMatters": {
+    "title": "Pourquoi la Santé Mentale Compte",
+    "p1": "La santé mentale affecte tous les aspects de la vie, y compris l'éducation, l'emploi, les relations familiales, la santé physique et le développement communautaire.",
+    "p2": "En investissant dans la santé mentale, les communautés deviennent plus saines, plus fortes, plus sûres et plus résilientes. Nous pensons qu'un véritable bien-être est impossible sans bien-être mental."
+  },
+  "whoWeServe": {
+    "title": "Qui Nous Servons",
+    "items": [
+      "Enfants",
+      "Adolescents",
+      "Adultes",
+      "Personnes Âgées",
+      "Familles",
+      "Femmes Enceintes",
+      "Survivants de Traumatismes",
+      "Personnes Souffrant de Troubles Mentaux",
+      "Personnes Touchées par la Toxicomanie",
+      "Écoles et Organisations Communautaires"
+    ]
+  },
+  "ourApproach": {
+    "title": "Notre Approche",
+    "steps": {
+      "Assessment": {
+        "title": "Évaluation",
+        "desc": "Évaluation complète pour comprendre les besoins individuels."
+      },
+      "PersonalizedCare": {
+        "title": "Soins Personnalisés",
+        "desc": "Plans de traitement fondés sur des preuves et adaptés à chaque personne."
+      },
+      "CommunitySupport": {
+        "title": "Soutien Communautaire",
+        "desc": "Intégration des réseaux sociaux et des ressources locales pour une guérison holistique."
+      },
+      "LongTermRecovery": {
+        "title": "Rétablissement à Long Terme",
+        "desc": "Soins continus et développement des compétences pour une résilience durable."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi Choisir ADO Center",
+    "items": {
+      "Licensed": {
+        "title": "Professionnels Agréés",
+        "desc": "Des soins spécialisés prodigués par des spécialistes formés et certifiés."
+      },
+      "Confidential": {
+        "title": "Soins Confidentiels",
+        "desc": "Votre vie privée est notre priorité absolue dans chaque interaction."
+      },
+      "Community": {
+        "title": "Services Communautaires",
+        "desc": "Des soins prodigués localement, en comprenant votre contexte culturel."
+      },
+      "Evidence": {
+        "title": "Pratique Fondée sur les Preuves",
+        "desc": "Traitements validés par la recherche scientifique et le succès clinique."
+      },
+      "Holistic": {
+        "title": "Soutien Holistique",
+        "desc": "Aborder conjointement l'esprit, le corps et l'environnement social."
+      },
+      "Affordable": {
+        "title": "Soins Abordables et Accessibles",
+        "desc": "Briser les barrières financières pour garantir que chacun reçoive de l'aide."
+      }
+    }
+  },
+  "communityCommitment": {
+    "title": "Engagement Communautaire",
+    "subtitle": "ADO Center collabore activement avec des partenaires locaux pour créer un solide réseau de soutien.",
+    "items": [
+      "Écoles",
+      "Églises",
+      "Leaders Communautaires",
+      "Prestataires de Soins de Santé",
+      "Organisations Locales"
+    ]
+  },
+  "longTermVision": {
+    "title": "Notre Vision à Long Terme",
+    "items": [
+      "Élargir l'accès à la santé mentale dans toutes les zones rurales",
+      "Former des professionnels locaux et des agents de santé communautaires",
+      "Réduire la stigmatisation grâce à l'éducation publique généralisée",
+      "Renforcer les familles avec des programmes de conseil ciblés",
+      "Bâtir des communautés résilientes capables de se soutenir mutuellement"
+    ]
+  },
+  "impact": {
+    "title": "Notre Impact",
+    "items": {
+      "Served": {
+        "number": "2000",
+        "suffix": "+",
+        "title": "Personnes Servies Annuellement",
+        "desc": "Fournir un soutien psychologique compatissant à travers La Gonâve."
+      },
+      "Confidential": {
+        "number": "100",
+        "suffix": "%",
+        "title": "Services Confidentiels",
+        "desc": "Garantir un environnement sûr et privé pour chaque individu."
+      },
+      "Professionals": {
+        "number": "7",
+        "suffix": "+",
+        "title": "Professionnels Dévoués",
+        "desc": "Une équipe d'experts cliniques agréés et hautement qualifiés."
+      },
+      "Programs": {
+        "number": "10",
+        "suffix": "+",
+        "title": "Programmes Communautaires",
+        "desc": "Éduquer et soutenir activement les quartiers et écoles locaux."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ensemble, Nous Pouvons Bâtir des Communautés Plus Fortes",
+    "text": "Chaque conversation, chaque acte de compassion et chaque occasion de soutien apportent de l'espoir aux individus et aux familles confrontés à des problèmes de santé mentale.",
+    "buttons": {
+      "learnMore": "En Savoir Plus",
+      "contact": "Nous Contacter"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "FAQ | ADO Mental Health Support Center",
+    "description": "Find answers to common questions about our mental health services, counseling, psychiatric care, and community outreach programs at ADO Center."
+  },
+  "page": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our mental health services, counseling, psychiatric care, outreach programs, and support available through ADO Center."
+  },
+  "faqs": [
+    {
+      "question": "What services does ADO Center provide?",
+      "answer": "We provide psychological counseling, psychiatric consultations, individual therapy, family therapy, group therapy, crisis intervention, mental health education, psychosocial rehabilitation, and community outreach programs."
+    },
+    {
+      "question": "Who can receive services?",
+      "answer": "Children, adolescents, adults, older adults, families, pregnant women, survivors of trauma, individuals living with mental health conditions, and those affected by substance use disorders are welcome."
+    },
+    {
+      "question": "Do I need an appointment?",
+      "answer": "Appointments are recommended to reduce waiting time, but emergency and crisis cases are attended as quickly as possible."
+    },
+    {
+      "question": "Are services confidential?",
+      "answer": "Yes. Every consultation is strictly confidential. We follow ethical and professional standards to protect the privacy of every client."
+    },
+    {
+      "question": "Will psychiatric medication be available?",
+      "answer": "Yes. Our psychiatrist evaluates patients and prescribes medication only when medically appropriate."
+    },
+    {
+      "question": "Do you provide counseling for children?",
+      "answer": "Yes. Our psychologists offer age-appropriate counseling and behavioral support for children and adolescents."
+    },
+    {
+      "question": "Do you organize community awareness programs?",
+      "answer": "Yes. We conduct workshops in schools, churches, community organizations, and public awareness campaigns to reduce stigma and improve mental health education."
+    },
+    {
+      "question": "Can families participate in therapy?",
+      "answer": "Absolutely. Family counseling helps strengthen relationships and supports recovery."
+    },
+    {
+      "question": "How much do services cost?",
+      "answer": "Our goal is to provide affordable and accessible mental health services. Fees, if applicable, are kept as low as possible."
+    },
+    {
+      "question": "How can I support the ADO Center?",
+      "answer": "You can support us by donating, volunteering, partnering with our programs, or helping raise awareness about mental health in our communities."
+    }
+  ],
+  "cta": {
+    "title": "Still have questions?",
+    "description": "Our team is here to help you find the right support. Reach out to us for more information or to schedule an appointment.",
+    "button": "Contact Us"
+  }
+}

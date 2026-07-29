@@ -1,0 +1,41 @@
+{
+  "title": "Services de Santé Mentale | ADO Center",
+  "description": "Explorez nos services complets de soins psychologiques et psychiatriques disponibles à La Gonâve.",
+  "headerTitle": "Services de Santé Mentale",
+  "headerSubtitle": "Des soins professionnels conçus pour aider les individus et les familles à s'épanouir dans un environnement sûr et confidentiel.",
+  "breadcrumb": "Nos Services",
+  "list": {
+    "psychological-assessments": {
+      "title": "Évaluations Psychologiques",
+      "description": "Des évaluations complètes pour identifier les préoccupations émotionnelles, comportementales, développementales et psychologiques."
+    },
+    "psychiatric-consultations": {
+      "title": "Consultations Psychiatriques",
+      "description": "Évaluation psychiatrique professionnelle, diagnostic, planification du traitement et gestion des médicaments."
+    },
+    "individual-therapy": {
+      "title": "Thérapie Individuelle",
+      "description": "Des conseils fondés sur des preuves pour la dépression, l'anxiété, les traumatismes, le stress, le deuil et les défis émotionnels."
+    },
+    "family-therapy": {
+      "title": "Thérapie Familiale",
+      "description": "Aider les familles à améliorer la communication, les relations, la résolution de conflits et les systèmes de soutien."
+    },
+    "group-therapy": {
+      "title": "Thérapie de Groupe",
+      "description": "Des séances de groupe thérapeutiques structurées favorisant la guérison, le soutien et l'apprentissage partagé."
+    },
+    "crisis-intervention": {
+      "title": "Intervention de Crise",
+      "description": "Un soutien immédiat en cas de crises émotionnelles, de détresse aiguë et de situations d'urgence en santé mentale."
+    },
+    "substance-use-support": {
+      "title": "Soutien en cas de Toxicomanie",
+      "description": "Services axés sur le rétablissement pour les personnes touchées par la dépendance et les troubles liés à l'usage de substances."
+    },
+    "older-adult-care": {
+      "title": "Soins de Santé Mentale pour les Personnes Âgées",
+      "description": "Des services spécialisés répondant aux besoins psychologiques et émotionnels des populations vieillissantes."
+    }
+  }
+}

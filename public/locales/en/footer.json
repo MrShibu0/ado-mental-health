@@ -1,0 +1,25 @@
+{
+  "mission_statement": "Promoting Mental Well-being, Strengthening Communities, Transforming Lives.",
+  "titles": {
+    "quick_links": "Quick Links",
+    "contact_info": "Contact Info",
+    "support_mission": "Support Our Mission"
+  },
+  "links": {
+    "about": "About Us",
+    "services": "Mental Health Services",
+    "community": "Community Programs",
+    "training": "Training",
+    "team": "Human Resources",
+    "impact": "Project Impact"
+  },
+  "legal": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "support_text": "Your contribution helps expand access to counseling, psychiatric care, and community mental health initiatives.",
+  "buttons": {
+    "donate": "Donate Now"
+  },
+  "copyright": "© {{year}} ADO Center. All rights reserved."
+}

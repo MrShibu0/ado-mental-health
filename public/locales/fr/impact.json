@@ -1,0 +1,36 @@
+{
+  "metaTitle": "Impact du Projet | ADO Center",
+  "metaDescription": "Découvrez les résultats attendus et l'impact continu de nos programmes de santé mentale à La Gonâve.",
+  "pageTitle": "Impact du Projet",
+  "pageSubtitle": "Mesurer notre contribution à des individus en meilleure santé et à des familles plus fortes.",
+  "breadcrumb": "Nos Résultats",
+  "sectionTitle": "Résultats Attendus",
+  "sectionSubtitle": "Les avantages à long terme que nous visons à atteindre pour les habitants de La Gonâve.",
+  "outcomes": [
+    {
+      "title": "Services Accessibles",
+      "desc": "Centre communautaire entièrement opérationnel avec un accès accru aux soins."
+    },
+    {
+      "title": "Amélioration du Bien-être",
+      "desc": "Meilleure santé émotionnelle, qualité de vie et résilience."
+    },
+    {
+      "title": "Sensibilisation Accrue",
+      "desc": "Meilleure connaissance et compréhension de la santé mentale."
+    },
+    {
+      "title": "Stigmatisation Réduite",
+      "desc": "Acceptation accrue et soutien communautaire plus fort."
+    },
+    {
+      "title": "Capacité Renforcée",
+      "desc": "Travailleurs formés et expertise locale durable."
+    },
+    {
+      "title": "Avantages à Long Terme",
+      "desc": "Des individus en meilleure santé, des familles plus fortes et des communautés résilientes."
+    }
+  ],
+  "quote": "\"En renforçant l'accès aux services de santé mentale et de soutien psychosocial, le centre contribue à des individus en meilleure santé, des familles plus fortes et un avenir plus résilient pour les habitants de La Gonâve.\""
+}

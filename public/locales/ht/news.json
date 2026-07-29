@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Nouvèl ak Evènman | ADO Center",
+    "description": "Dènye enfòmasyon, evènman, ak istwa siksè ki soti nan Sant Sipò Sante Mantal ADO."
+  },
+  "page": {
+    "title": "Nouvèl ak Evènman",
+    "subtitle": "Rete enfòme sou dènye aktivite pwogram nou yo, sansibilizasyon kominotè, ak evènman k ap vini yo.",
+    "breadcrumb": "Mizajou"
+  },
+  "sections": {
+    "latestNews": "Dènye Nouvèl"
+  },
+  "items": [
+    {
+      "title": "Nouvo Kanpay Sansibilizasyon sou Sante Mantal Lanse nan Lekòl yo",
+      "date": "15 Jen 2026",
+      "category": "Aktivite Pwogram",
+      "excerpt": "ADO Center lanse avèk siksè yon pwogram konplè pou sansibilize sou sante mantal nan 10 lekòl lokal nan La Gonâve..."
+    },
+    {
+      "title": "Sansibilizasyon Kominotè Rive Jwenn 500 Fanmi",
+      "date": "28 Me 2026",
+      "category": "Sansibilizasyon Kominotè",
+      "excerpt": "Ekip devwe Travayè Sante Kominotè nou yo te vizite zòn lwen yo mwa sa a, bay psikoedikasyon esansyèl ak sipò..."
+    },
+    {
+      "title": "Istwa Siksè: Rekonstwi Apre Chòk",
+      "date": "10 Avril 2026",
+      "category": "Istwa Siksè",
+      "excerpt": "Li sou fason pwogram rekiperasyon apre chòk nou an te ede abitan lokal yo rekonstwi lavi yo epi jwenn espwa apre dènye dezas natirèl yo..."
+    }
+  ],
+  "actions": {
+    "readMore": "Li Tout Istwa A"
+  }
+}

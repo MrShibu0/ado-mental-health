@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Actualités et Événements | ADO Center",
+    "description": "Dernières mises à jour, événements et histoires de réussite du Centre de Soutien en Santé Mentale ADO."
+  },
+  "page": {
+    "title": "Actualités et Événements",
+    "subtitle": "Restez informé de nos dernières activités de programme, de nos actions communautaires et des événements à venir.",
+    "breadcrumb": "Mises à jour"
+  },
+  "sections": {
+    "latestNews": "Dernières Actualités"
+  },
+  "items": [
+    {
+      "title": "Lancement d'une Nouvelle Campagne de Sensibilisation à la Santé Mentale dans les Écoles",
+      "date": "15 Juin 2026",
+      "category": "Activités du Programme",
+      "excerpt": "Le ADO Center a lancé avec succès un programme complet de sensibilisation à la santé mentale dans 10 écoles locales à La Gonâve..."
+    },
+    {
+      "title": "L'Action Communautaire Atteint 500 Familles",
+      "date": "28 Mai 2026",
+      "category": "Action Communautaire",
+      "excerpt": "Notre équipe dévouée d'Agents de Santé Communautaire a visité des zones reculées ce mois-ci, offrant une psychoéducation et un soutien essentiels..."
+    },
+    {
+      "title": "Histoire de Réussite : Se Reconstruire Après un Traumatisme",
+      "date": "10 Avril 2026",
+      "category": "Histoires de Réussite",
+      "excerpt": "Découvrez comment notre programme de récupération après un traumatisme a aidé les résidents locaux à reconstruire leur vie et à trouver de l'espoir après les récentes catastrophes naturelles..."
+    }
+  ],
+  "actions": {
+    "readMore": "Lire l'Article Complet"
+  }
+}

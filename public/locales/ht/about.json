@@ -1,0 +1,211 @@
+{
+  "title": "Sou Nou | ADO Mental Health Center",
+  "description": "Dekouvri istwa nou, vizyon nou, ak misyon nou pou amelyore byennèt sikolojik nan La Gonâv.",
+  "hero": {
+    "badge": "Sou ADO Center",
+    "title": "Bati Kominote Ki Pi Djanm, Ki Pi An Sante",
+    "subtitle": "Nou devwe pou ofri sipò sikolojik ak sikososyal ki aksesib epi ki gen konpasyon pou moun ak fanmi toupatou nan La Gonâv.",
+    "buttons": {
+      "learnMore": "Aprann Plis",
+      "contactUs": "Kontakte Nou"
+    }
+  },
+  "intro": {
+    "title": "Sou ADO Center",
+    "subtitle": "Bati espwa, rezilyans, ak kominote ki pi an sante grasa sipò sikolojik ak sikososyal ki aksesib.",
+    "p1": "ADO Center se yon òganizasyon sipò sikolojik ak sikososyal ki santre sou kominote a, dedye pou amelyore byennèt emosyonèl ak kalite lavi moun ak fanmi nan Anse-à-Galets, La Gonâv, Ayiti.",
+    "p2": "Òganizasyon nou an kwè ke sante mantal se yon dwa moun fondamantal. Nou travay pou asire ke timoun, adolesan, granmoun, moun aje, ak popilasyon vilnerab yo gen aksè a sèvis sante mantal ki gen konpasyon, ki konfidansyèl, epi ki baze sou prèv, kèlkeswa sitiyasyon sosyal oswa ekonomik yo.",
+    "p3": "Atravè konsèy, swen sikyatrik, sipò sikososyal, edikasyon, ak angajman kominotè, nou fè efò pou kreye moun ki pi an sante, fanmi ki pi djanm, ak kominote ki gen plis rezilyans."
+  },
+  "story": {
+    "title": "Istwa Nou",
+    "p1": "ADO Center te etabli kòm repons ak bezwen k ap grandi epi ki kritik pou sèvis sante mantal nan La Gonâv. Kominote a ap fè fas ak anpil defi, tankou povrete, aksè limite nan swen sante, izolasyon jeyografik, ak efè k ap kontinye nan katastwòf natirèl k ap repete yo.",
+    "p2": "Defi akablan sa yo kontribye nan ogmantasyon to depresyon, enkyetid, chòk sikolojik, maladi ki lye ak itilizasyon sibstans, ak kondisyon sikyatrik grav ki pa trete, souvan kite moun ak fanmi yo san okenn kote pou yo vire.",
+    "p3": "Kondwi pa vizyon pou kreye swen sante mantal aksesib epi dirab, nou te kòmanse bati yon sant ki pa sèlman bay tretman pwofesyonèl men tou ki travay aktivman pou diminye stigma ki antoure maladi mantal nan kilti nou an.",
+    "p4": "Jodi a, nou kanpe tankou yon limyè espwa, k ap pote sèvis sipò sikolojik ak sikososyal pwofesyonèl dirèkteman bay moun ki pi bezwen yo."
+  },
+  "mission": {
+    "title": "Misyon Nou",
+    "text": "Pou amelyore byennèt sikolojik, ranfòse rezilyans, epi elaji aksè a sèvis sipò sikolojik ak sikososyal bon jan kalite pou moun, fanmi, ak kominote toupatou nan La Gonâv."
+  },
+  "vision": {
+    "title": "Vizyon Nou",
+    "text": "Yon avni kote chak moun gen aksè a swen sante mantal ki gen konpasyon, abòdab, epi ki apwopriye kiltirèlman, ki bay kominote yo pouvwa pou yo pwospere ak diyite, espwa, ak rezilyans."
+  },
+  "founder": {
+    "title": "Fondatè Nou An",
+    "name": "Ruthe Antoine, LCSW, CSSW",
+    "role": "Fondatè ak PDG",
+    "bio1": "Ruthe Antoine te fonde ADO Center ak yon vizyon pwofon: asire ke pèsonn nan La Gonâv pa gen pou fè fas ak defi sante mantal poukont yo.",
+    "bio2": "Avèk anpil eksperyans nan travay sosyal klinik, li te rekonèt twou kritik nan sèvis sante mantal yo ak enpak devastatè chòk ki pa trete ak detrès sikolojik nan kominote a.",
+    "bio3": "Angajman li pou swen sante mantal aksesib epi ki gen konpasyon motive misyon sant lan pou kraze baryè yo, elimine stigma, epi bay sipò ki reponn ak kilti a ki vrèman pèmèt moun ak fanmi yo geri epi pwospere."
+  },
+  "coreValues": {
+    "title": "Valè Fondamantal Nou",
+    "items": {
+      "Compassion": {
+        "title": "Konpasyon",
+        "desc": "Ofri swen ak anpati, bonte, ak respè."
+      },
+      "Integrity": {
+        "title": "Entegrite",
+        "desc": "Aji avèk onètete, transparans, ak pwofesyonalis."
+      },
+      "Confidentiality": {
+        "title": "Konfidansyalite",
+        "desc": "Pwoteje vi prive ak konfyans chak moun."
+      },
+      "Inclusion": {
+        "title": "Enklizyon",
+        "desc": "Sèvi tout moun kèlkeswa laj, sèks, relijyon, oswa background."
+      },
+      "Excellence": {
+        "title": "Ekselans",
+        "desc": "Livre sèvis sante mantal bon jan kalite, ki baze sou prèv."
+      },
+      "CommunityEmpowerment": {
+        "title": "Otonomizasyon",
+        "desc": "Ranfòse kominote yo atravè edikasyon, kolaborasyon, ak prevansyon."
+      }
+    }
+  },
+  "guidingPrinciples": {
+    "title": "Prensip K ap Gide Nou Yo",
+    "items": {
+      "Respect": "Respè",
+      "Dignity": "Diyite",
+      "Equity": "Ekite",
+      "Compassion": "Konpasyon",
+      "Collaboration": "Kolaborasyon",
+      "Accountability": "Responsablite"
+    }
+  },
+  "whyMatters": {
+    "title": "Poukisa Sante Mantal Enpòtan",
+    "p1": "Sante mantal afekte tout aspè nan lavi a, tankou edikasyon, travay, relasyon fanmi, sante fizik, ak devlopman kominote a.",
+    "p2": "Lè nou envesti nan sante mantal, kominote yo vin pi an sante, pi djanm, pi an sekirite, ak pi rezilyan. Nou kwè vrè byennèt enposib san byennèt mantal."
+  },
+  "whoWeServe": {
+    "title": "Ki Moun Nou Sèvi",
+    "items": [
+      "Timoun",
+      "Adolesan",
+      "Granmoun",
+      "Moun Aje",
+      "Fanmi",
+      "Fanm Ansent",
+      "Moun Ki Siviv Chòk",
+      "Moun K ap Viv ak Pwoblèm Sante Mantal",
+      "Moun Ki Afekte pa Twoub Itilizasyon Sibstans",
+      "Lekòl ak Òganizasyon Kominotè"
+    ]
+  },
+  "ourApproach": {
+    "title": "Apwòch Nou",
+    "steps": {
+      "Assessment": {
+        "title": "Evalyasyon",
+        "desc": "Evalyasyon konplè pou konprann bezwen endividyèl yo."
+      },
+      "PersonalizedCare": {
+        "title": "Swen Pèsonalize",
+        "desc": "Plan tretman ki baze sou prèv epi ki adapte pou chak moun."
+      },
+      "CommunitySupport": {
+        "title": "Sipò Kominotè",
+        "desc": "Entegre rezo sosyal ak resous lokal pou yon gerizon total."
+      },
+      "LongTermRecovery": {
+        "title": "Rekiperasyon alontèm",
+        "desc": "Swen kontinyèl ak devlopman konpetans pou rezilyans dirab."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Poukisa Chwazi ADO Center",
+    "items": {
+      "Licensed": {
+        "title": "Pwofesyonèl Lisansye",
+        "desc": "Swen ekspè nan men espesyalis sante mantal ki fòme ak sètifye."
+      },
+      "Confidential": {
+        "title": "Swen Konfidansyèl",
+        "desc": "Vi prive ou se pi gwo priyorite nou nan chak entèraksyon."
+      },
+      "Community": {
+        "title": "Sèvis Baze Nan Kominote a",
+        "desc": "Swen yo bay lokalman, ki konprann kontèks kiltirèl ou."
+      },
+      "Evidence": {
+        "title": "Pratik Ki Baze Sou Prèv",
+        "desc": "Tretman ki pwouve pa rechèch syantifik ak siksè klinik."
+      },
+      "Holistic": {
+        "title": "Sipò Global",
+        "desc": "Abòde lespri, kò, ak anviwònman sosyal la ansanm."
+      },
+      "Affordable": {
+        "title": "Swen Abòdab epi Aksesib",
+        "desc": "Kraze baryè finansye pou asire tout moun jwenn èd."
+      }
+    }
+  },
+  "communityCommitment": {
+    "title": "Angajman Kominotè",
+    "subtitle": "ADO Center kolabore aktivman ak patnè lokal yo pou kreye yon rezo sipò djanm.",
+    "items": [
+      "Lekòl",
+      "Legliz",
+      "Lidè Kominotè Yo",
+      "Moun K ap Bay Swen Sante",
+      "Òganizasyon Lokal Yo"
+    ]
+  },
+  "longTermVision": {
+    "title": "Vizyon Alontèm Nou",
+    "items": [
+      "Elaji aksè sante mantal nan tout zòn riral yo",
+      "Fòme pwofesyonèl lokal ak travayè sante kominotè",
+      "Diminye stigma atravè edikasyon piblik toupatou",
+      "Ranfòse fanmi yo ak pwogram konsèy vize",
+      "Bati kominote rezilyan ki kapab sipòte youn lòt"
+    ]
+  },
+  "impact": {
+    "title": "Enpak Nou",
+    "items": {
+      "Served": {
+        "number": "2000",
+        "suffix": "+",
+        "title": "Moun Nou Sèvi Chak Ane",
+        "desc": "Ofri sipò sante mantal ki gen konpasyon toupatou nan La Gonâv."
+      },
+      "Confidential": {
+        "number": "100",
+        "suffix": "%",
+        "title": "Sèvis Konfidansyèl",
+        "desc": "Asire yon anviwònman ki an sekirite epi prive pou chak moun."
+      },
+      "Professionals": {
+        "number": "7",
+        "suffix": "+",
+        "title": "Pwofesyonèl Dedye",
+        "desc": "Yon ekip ekspè klinik ki gen lisans epi ki trè byen fòme."
+      },
+      "Programs": {
+        "number": "10",
+        "suffix": "+",
+        "title": "Pwogram Sansibilizasyon",
+        "desc": "Edike ak sipòte aktivman katye ak lekòl lokal yo."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ansanm Nou Ka Bati Kominote Ki Pi Djanm",
+    "text": "Chak konvèsasyon, chak zak konpasyon, ak chak opòtinite pou sipò pote espwa bay moun ak fanmi k ap fè fas ak defi sante mantal.",
+    "buttons": {
+      "learnMore": "Aprann Plis",
+      "contact": "Kontakte Nou"
+    }
+  }
+}

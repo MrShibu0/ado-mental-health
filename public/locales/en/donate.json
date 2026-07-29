@@ -1,0 +1,88 @@
+{
+  "seo": {
+    "title": "Support Our Mission | Donate to ADO Center",
+    "description": "Your contribution helps expand access to counseling, psychiatric care, and community mental health initiatives in La Gonâve, Haiti."
+  },
+  "hero": {
+    "title": "Make a Lasting Impact on Mental Health",
+    "subtitle": "Your generous donation helps the ADO Center provide essential psychological care, counseling, and community support in La Gonâve, Haiti.",
+    "secure_badge": "Secure Donation"
+  },
+  "impact": {
+    "title": "Your Support Transforms Lives",
+    "description": "By donating to the ADO Mental Health Center, you are directly funding critical psychological services, psychiatric care, and community outreach programs for individuals and families in Anse-à-Galets.",
+    "cards": {
+      "25": "Supports one counseling session",
+      "50": "Provides family therapy for one month",
+      "100": "Funds a community mental health workshop",
+      "250": "Sponsors psychiatric care for 5 patients"
+    }
+  },
+  "form": {
+    "steps": {
+      "amount": "Amount",
+      "details": "Details",
+      "payment": "Payment"
+    },
+    "amount": {
+      "give_once": "Give Once",
+      "give_monthly": "Give Monthly",
+      "custom": "Custom",
+      "custom_placeholder": "Enter amount",
+      "next": "Next"
+    },
+    "details": {
+      "labels": {
+        "fullName": "Full Name *",
+        "email": "Email Address *",
+        "phone": "Phone (Optional)",
+        "country": "Country"
+      },
+      "placeholders": {
+        "fullName": "John Doe",
+        "email": "john@example.com",
+        "phone": "+1 (555) 000-0000",
+        "country": "United States"
+      },
+      "validation": {
+        "name_required": "Name is required",
+        "email_required": "Email is required",
+        "email_invalid": "Invalid email address"
+      },
+      "continue": "Continue to Payment"
+    },
+    "payment": {
+      "donating": "You are donating",
+      "monthly": "monthly",
+      "one_time": "one-time",
+      "name": "Name",
+      "email": "Email",
+      "total": "Total",
+      "usd": "USD",
+      "complete": "Complete Payment",
+      "processing": "Processing...",
+      "secure_note": "Payments are securely processed by Stripe."
+    },
+    "errors": {
+      "network": "Network error. Please try again later.",
+      "failed": "Failed to initiate payment. Please try again."
+    }
+  },
+  "success": {
+    "seo_title": "Donation Successful | ADO Center",
+    "title": "Thank You for Your Generosity!",
+    "message": "Your donation has been successfully processed. We have sent a receipt to your email address.",
+    "impact_message": "Your support directly enables us to provide vital mental health services, counseling, and community programs in La Gonâve.",
+    "button": "Return to Homepage"
+  },
+  "cancel": {
+    "seo_title": "Donation Cancelled | ADO Center",
+    "title": "Donation Cancelled",
+    "message": "Your donation process was cancelled and you have not been charged.",
+    "impact_message": "If you experienced any technical issues or have questions about supporting our mission, please don't hesitate to reach out to us.",
+    "buttons": {
+      "try_again": "Try Again",
+      "contact": "Contact Support"
+    }
+  }
+}

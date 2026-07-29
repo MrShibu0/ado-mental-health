@@ -1,0 +1,88 @@
+{
+  "seo": {
+    "title": "Sipòte Misyon Nou | Fè yon Don bay ADO Center",
+    "description": "Kontribisyon ou ede elaji aksè a konsèy, swen sikyatrik, ak inisyativ sante mantal kominotè nan La Gonâve, Ayiti."
+  },
+  "hero": {
+    "title": "Fè yon Enpak Dirab sou Sante Mantal",
+    "subtitle": "Don jenere ou a ede ADO Center bay swen sikolojik esansyèl, konsèy, ak sipò kominotè nan La Gonâve, Ayiti.",
+    "secure_badge": "Don Sekirize"
+  },
+  "impact": {
+    "title": "Sipò Ou Transfòme Lavi",
+    "description": "Lè w fè yon don bay Sant Sante Mantal ADO a, ou finanse dirèkteman sèvis sikolojik enpòtan, swen sikyatrik, ak pwogram sansibilizasyon kominotè pou moun ak fanmi nan Anse-à-Galets.",
+    "cards": {
+      "25": "Sipòte yon sesyon konsèy",
+      "50": "Bay terapi fanmi pou yon mwa",
+      "100": "Finanse yon atelye sante mantal kominotè",
+      "250": "Sponsorize swen sikyatrik pou 5 pasyan"
+    }
+  },
+  "form": {
+    "steps": {
+      "amount": "Kantite",
+      "details": "Detay",
+      "payment": "Peman"
+    },
+    "amount": {
+      "give_once": "Bay Yon Fwa",
+      "give_monthly": "Bay Chak Mwa",
+      "custom": "Lòt",
+      "custom_placeholder": "Antre kantite",
+      "next": "Kontinye"
+    },
+    "details": {
+      "labels": {
+        "fullName": "Non Konplè *",
+        "email": "Adrès Imèl *",
+        "phone": "Telefòn (Opsyonèl)",
+        "country": "Peyi"
+      },
+      "placeholders": {
+        "fullName": "Jan Batis",
+        "email": "jan@egzanp.com",
+        "phone": "+1 (555) 000-0000",
+        "country": "Ayiti"
+      },
+      "validation": {
+        "name_required": "Non se obligatwa",
+        "email_required": "Imèl se obligatwa",
+        "email_invalid": "Adrès imèl la pa bon"
+      },
+      "continue": "Ale nan Peman"
+    },
+    "payment": {
+      "donating": "W ap bay",
+      "monthly": "chak mwa",
+      "one_time": "yon fwa",
+      "name": "Non",
+      "email": "Imèl",
+      "total": "Total",
+      "usd": "USD",
+      "complete": "Fè Peman an",
+      "processing": "Ap travay...",
+      "secure_note": "Peman yo fèt an sekirite pa Stripe."
+    },
+    "errors": {
+      "network": "Erè nan rezo a. Tanpri eseye ankò pita.",
+      "failed": "Nou pa t kapab kòmanse peman an. Tanpri eseye ankò."
+    }
+  },
+  "success": {
+    "seo_title": "Don Reyisi | ADO Center",
+    "title": "Mèsi Pou Jenerozite W!",
+    "message": "Nou trete don w lan avèk siksè. Nou voye yon resi nan adrès imèl ou.",
+    "impact_message": "Sipò w la pèmèt nou dirèkteman bay sèvis sante mantal, konsèy, ak pwogram kominotè ki trè enpòtan nan La Gonâve.",
+    "button": "Tounen nan Paj Akèy la"
+  },
+  "cancel": {
+    "seo_title": "Don Anile | ADO Center",
+    "title": "Don Anile",
+    "message": "Pwisans don w lan te anile epi yo pa t pran kòb nan men w.",
+    "impact_message": "Si w te gen okenn pwoblèm teknik oswa si w gen kesyon sou fason pou sipòte misyon nou an, tanpri pa ezite kontakte nou.",
+    "buttons": {
+      "try_again": "Eseye Ankò",
+      "contact": "Kontakte Sipò"
+    }
+  }
+}

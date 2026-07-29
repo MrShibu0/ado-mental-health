@@ -1,0 +1,36 @@
+{
+  "metaTitle": "Project Impact | ADO Center",
+  "metaDescription": "Explore the expected outcomes and ongoing impact of our mental health programs in La Gonâve.",
+  "pageTitle": "Project Impact",
+  "pageSubtitle": "Measuring our contribution to healthier individuals and stronger families.",
+  "breadcrumb": "Our Results",
+  "sectionTitle": "Expected Outcomes",
+  "sectionSubtitle": "The long-term benefits we aim to achieve for the people of La Gonâve.",
+  "outcomes": [
+    {
+      "title": "Accessible Services",
+      "desc": "Fully operational community center with increased access to care."
+    },
+    {
+      "title": "Improved Well-being",
+      "desc": "Better emotional health, quality of life, and resilience."
+    },
+    {
+      "title": "Increased Awareness",
+      "desc": "Greater mental health literacy and understanding."
+    },
+    {
+      "title": "Reduced Stigma",
+      "desc": "Increased acceptance and stronger community support."
+    },
+    {
+      "title": "Strengthened Capacity",
+      "desc": "Trained workers and sustainable local expertise."
+    },
+    {
+      "title": "Long-Term Benefits",
+      "desc": "Healthier individuals, stronger families, and resilient communities."
+    }
+  ],
+  "quote": "\"By strengthening access to mental health and psychosocial support services, the center contributes to healthier individuals, stronger families, and a more resilient future for the people of La Gonâve.\""
+}

@@ -1,0 +1,25 @@
+{
+  "mission_statement": "Promouvoir le bien-être mental, renforcer les communautés, transformer des vies.",
+  "titles": {
+    "quick_links": "Liens Rapides",
+    "contact_info": "Coordonnées",
+    "support_mission": "Soutenez Notre Mission"
+  },
+  "links": {
+    "about": "À Propos de Nous",
+    "services": "Services de Santé Mentale",
+    "community": "Programmes Communautaires",
+    "training": "Formation",
+    "team": "Ressources Humaines",
+    "impact": "Impact du Projet"
+  },
+  "legal": {
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
+  "support_text": "Votre contribution aide à élargir l'accès au conseil, aux soins psychiatriques et aux initiatives de santé mentale communautaire.",
+  "buttons": {
+    "donate": "Faire un don"
+  },
+  "copyright": "© {{year}} ADO Center. Tous droits réservés."
+}

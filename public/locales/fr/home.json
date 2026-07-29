@@ -1,0 +1,336 @@
+{
+  "seo": {
+    "title": "ADO Mental Health Support Center | La Gonâve, Haïti",
+    "description": "Fournir un soutien psychologique accessible, des services de conseil et des services de santé mentale communautaires à Anse-à-Galets, La Gonâve."
+  },
+  "hero": {
+    "badge": "Soutien Santé Mentale & Psychosocial",
+    "title": "Renforcer le Bien-être Mental et Bâtir des Communautés Résilientes à La Gonâve, Haïti",
+    "subtitle": "Autonomiser les individus, les familles et les communautés grâce à des conseils compatissants, des soins psychiatriques, un soutien psychosocial, des programmes de prévention et une éducation à la santé mentale.",
+    "buttons": {
+      "getSupport": "Obtenir de l'Aide",
+      "donateNow": "Faire un Don",
+      "learnMore": "En Savoir Plus Sur Nous"
+    },
+    "trustCards": {
+      "confidential": "Soins Confidentiels",
+      "licensed": "Professionnels Agréés",
+      "community": "Soutien Communautaire",
+      "evidence": "Pratique Fondée sur des Preuves"
+    }
+  },
+  "trustIndicators": {
+    "items": [
+      "Confidentiel",
+      "Professionnels Agréés",
+      "Soins Inclusifs",
+      "Fondé sur des Preuves",
+      "Axé sur la Communauté",
+      "Services Abordables"
+    ]
+  },
+  "animatedImpact": {
+    "items": {
+      "supported": {
+        "number": "2000",
+        "suffix": "+",
+        "title": "Personnes Soutenues",
+        "desc": "Fournir des services de santé mentale compatissants chaque année."
+      },
+      "professionals": {
+        "number": "7",
+        "suffix": "+",
+        "title": "Professionnels Dévoués",
+        "desc": "Une équipe d'experts cliniques agréés et hautement qualifiés."
+      },
+      "outreach": {
+        "number": "10",
+        "suffix": "+",
+        "title": "Programmes Communautaires",
+        "desc": "Éduquer et soutenir activement les quartiers locaux."
+      },
+      "confidential": {
+        "number": "100",
+        "suffix": "%",
+        "title": "Soins Confidentiels et Compatissants",
+        "desc": "Garantir un environnement sûr et privé pour chaque individu."
+      }
+    }
+  },
+  "welcome": {
+    "title": "Bienvenue à ADO Center",
+    "subtitle": "Bâtir l'espoir, la résilience et des communautés plus saines grâce à un soutien psychologique et psychosocial accessible.",
+    "p1": "ADO Center est une organisation de soutien psychologique et psychosocial axée sur la communauté, dédiée à l'amélioration du bien-être émotionnel et de la qualité de vie des individus et des familles à Anse-à-Galets, La Gonâve, Haïti.",
+    "p2": "Notre organisation croit que la santé mentale est un droit humain fondamental. Nous veillons à ce que les enfants, les adolescents, les adultes, les personnes âgées et les populations vulnérables aient accès à des services de santé mentale compatissants, confidentiels et fondés sur des preuves, indépendamment de leur origine sociale ou économique.",
+    "button": "Découvrir Notre Histoire"
+  },
+  "whyMentalHealth": {
+    "title": "Pourquoi la Santé Mentale Compte",
+    "items": {
+      "wellbeing": "Bien-être Mental",
+      "family": "Stabilité Familiale",
+      "education": "Éducation",
+      "community": "Développement Communautaire",
+      "hope": "Espoir & Rétablissement",
+      "inclusion": "Inclusion Sociale"
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des soins professionnels conçus pour aider les individus et les familles à s'épanouir dans un environnement sûr et confidentiel.",
+    "learnMore": "En Savoir Plus",
+    "viewAll": "Voir Tous Les Services",
+    "items": {
+      "counseling": {
+        "title": "Conseil Individuel",
+        "desc": "Séances de thérapie individuelles avec des professionnels agréés pour relever des défis personnels."
+      },
+      "group": {
+        "title": "Thérapie de Groupe",
+        "desc": "Cadres de soutien animés par des experts pour partager des expériences et renforcer la résilience."
+      },
+      "family": {
+        "title": "Thérapie Familiale",
+        "desc": "Séances collaboratives visant à améliorer la communication et à résoudre les conflits familiaux."
+      },
+      "crisis": {
+        "title": "Intervention en Cas de Crise",
+        "desc": "Assistance immédiate à court terme pour les personnes souffrant de détresse psychologique aiguë."
+      },
+      "psychiatric": {
+        "title": "Soins Psychiatriques",
+        "desc": "Évaluation médicale complète et traitement pour les problèmes de santé mentale graves."
+      },
+      "community": {
+        "title": "Sensibilisation Communautaire",
+        "desc": "Programmes éducatifs et ateliers pour sensibiliser et réduire la stigmatisation."
+      }
+    }
+  },
+  "howWeHelp": {
+    "title": "Comment Nous Aidons",
+    "steps": {
+      "reachOut": {
+        "title": "Contactez-Nous",
+        "desc": "Contactez notre équipe."
+      },
+      "assessment": {
+        "title": "Évaluation",
+        "desc": "Recevez une évaluation professionnelle."
+      },
+      "care": {
+        "title": "Soins Personnalisés",
+        "desc": "Plan de traitement et de soutien individuel."
+      },
+      "recovery": {
+        "title": "Rétablissement & Croissance",
+        "desc": "Soutien continu vers le bien-être."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi Choisir ADO Center",
+    "items": {
+      "licensed": {
+        "title": "Professionnels Agréés",
+        "desc": "Des soins spécialisés prodigués par des spécialistes formés et certifiés."
+      },
+      "confidential": {
+        "title": "Soins Confidentiels",
+        "desc": "Votre vie privée est notre priorité absolue dans chaque interaction."
+      },
+      "compassionate": {
+        "title": "Soutien Compatissant",
+        "desc": "Des soins empathiques, sans jugement et adaptés à vos besoins."
+      },
+      "outreach": {
+        "title": "Sensibilisation Communautaire",
+        "desc": "S'engager activement avec les groupes locaux pour favoriser la résilience collective."
+      },
+      "evidence": {
+        "title": "Pratique Fondée sur des Preuves",
+        "desc": "Traitements validés par la recherche scientifique et le succès clinique."
+      },
+      "affordable": {
+        "title": "Services Abordables et Accessibles",
+        "desc": "Briser les barrières financières pour garantir que chacun reçoive de l'aide."
+      }
+    }
+  },
+  "outreach": {
+    "title": "Sensibilisation Communautaire",
+    "items": {
+      "schools": "Écoles",
+      "families": "Familles",
+      "counseling": "Conseil",
+      "workshops": "Ateliers",
+      "youth": "Jeunesse",
+      "events": "Événements"
+    }
+  },
+  "team": {
+    "title": "Rencontrez Notre Équipe",
+    "founder": {
+      "name": "Ruthe Antoine, LCSW, CSSW",
+      "role": "Fondatrice & PDG",
+      "bio": "Dévouée à des soins de santé mentale accessibles et compatissants pour les habitants de La Gonâve."
+    },
+    "comingSoon": "Membre de l'Équipe Bientôt Disponible",
+    "button": "Rencontrez Notre Équipe"
+  },
+  "successStories": {
+    "title": "Histoires de Réussite",
+    "readMore": "Lire la Suite",
+    "items": [
+      {
+        "title": "Bien-être Familial Amélioré",
+        "summary": "Grâce à la thérapie familiale, ils ont appris à communiquer efficacement et ont reconstruit leur confiance."
+      },
+      {
+        "title": "Succès du Conseil aux Jeunes",
+        "summary": "Un adolescent a trouvé la force de surmonter son anxiété et de retourner à l'école avec confiance."
+      },
+      {
+        "title": "Initiative de Sensibilisation",
+        "summary": "Notre récent atelier a touché plus de 200 leaders locaux, suscitant des conversations vitales."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "items": [
+      {
+        "quote": "Le soutien que j'ai reçu a changé ma vie. Je me sens enfin compris et outillé pour faire face à mes défis.",
+        "name": "Membre de la Communauté",
+        "location": "Anse-à-Galets"
+      },
+      {
+        "quote": "L'environnement de notre école a complètement changé depuis les ateliers de sensibilisation.",
+        "name": "Enseignant Local",
+        "location": "La Gonâve"
+      },
+      {
+        "quote": "Le centre offre un havre de paix. Leur dévouement à la confidentialité et aux soins est inégalé.",
+        "name": "Participant au Programme",
+        "location": "Anse-à-Galets"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Nos Partenaires et Collaborateurs",
+    "groups": {
+      "healthcare": "Santé",
+      "education": "Éducation",
+      "community": "Communauté",
+      "government": "Gouvernement",
+      "ngos": "ONG"
+    },
+    "placeholder": "Logo Partenaire"
+  },
+  "volunteer": {
+    "title": "Faites du Bénévolat Avec Nous",
+    "desc": "Soutenez la sensibilisation communautaire, les campagnes et l'éducation en santé mentale. Votre temps peut changer une vie.",
+    "buttons": {
+      "become": "Devenir Bénévole",
+      "learnMore": "En Savoir Plus"
+    }
+  },
+  "supportMission": {
+    "title": "Soutenez Notre Mission",
+    "subtitle": "Votre don généreux nous aide à fournir des services de santé mentale essentiels à ceux qui en ont besoin.",
+    "cta": "Faire un Don",
+    "items": {
+      "25": {
+        "amount": "25 $",
+        "desc": "Soutient une séance de conseil."
+      },
+      "100": {
+        "amount": "100 $",
+        "desc": "Finance un atelier communautaire."
+      },
+      "250": {
+        "amount": "250 $",
+        "desc": "Fournit des ressources en santé mentale."
+      },
+      "500": {
+        "amount": "500 $",
+        "desc": "Soutient la sensibilisation dans les communautés."
+      }
+    }
+  },
+  "faqPreview": {
+    "title": "Questions Fréquemment Posées",
+    "button": "Voir Toutes les FAQ",
+    "questions": [
+      {
+        "q": "Vos services sont-ils totalement confidentiels ?",
+        "a": "Oui, toutes les consultations et les traitements sont strictement confidentiels."
+      },
+      {
+        "q": "Qui est admissible pour recevoir de l'aide ?",
+        "a": "Nous servons des enfants, des adolescents, des adultes et des personnes âgées de tous horizons."
+      },
+      {
+        "q": "Proposez-vous des conseils familiaux ?",
+        "a": "Oui, nous proposons des séances de thérapie familiale spécialisées."
+      },
+      {
+        "q": "Comment puis-je prendre rendez-vous ?",
+        "a": "Vous pouvez nous appeler, envoyer un message WhatsApp ou utiliser notre formulaire de contact."
+      }
+    ]
+  },
+  "latestNews": {
+    "title": "Dernières Nouvelles",
+    "readMore": "Lire la Suite",
+    "items": [
+      {
+        "category": "Communauté",
+        "date": "15 Mars 2026",
+        "title": "Lancement d'un Nouveau Programme",
+        "summary": "Nous élargissons nos services pour atteindre les zones plus isolées de La Gonâve."
+      },
+      {
+        "category": "Éducation",
+        "date": "28 Février 2026",
+        "title": "Succès de l'Atelier de Santé Mentale",
+        "summary": "Plus de 50 enseignants ont assisté à notre récent atelier sur le bien-être des élèves."
+      },
+      {
+        "category": "Mises à Jour",
+        "date": "10 Janvier 2026",
+        "title": "Accueil de Nouveau Personnel Clinique",
+        "summary": "ADO Center est ravi de présenter trois nouveaux professionnels agréés à notre équipe."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Restez Connecté",
+    "text": "Recevez des mises à jour sur les programmes, événements et initiatives communautaires.",
+    "placeholder": "Entrez votre adresse e-mail",
+    "button": "S'abonner",
+    "success": "Merci de vous être abonné !"
+  },
+  "contactPreview": {
+    "title": "Contactez-Nous",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "hours": "Heures d'Ouverture",
+    "whatsapp": "WhatsApp",
+    "buttons": {
+      "call": "Appeler",
+      "email": "Envoyer un E-mail",
+      "directions": "Itinéraire"
+    }
+  },
+  "finalCTA": {
+    "title": "Ensemble, Nous Pouvons Bâtir des Communautés Plus Saines",
+    "text": "Chaque conversation crée de l'espoir. Chaque acte de compassion change des vies. Rejoignez-nous pour élargir l'accès aux soins de santé mentale.",
+    "buttons": {
+      "getSupport": "Obtenir de l'Aide",
+      "donate": "Faire un Don",
+      "volunteer": "Faire du Bénévolat"
+    }
+  }
+}

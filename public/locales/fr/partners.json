@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Partenaires et Donateurs | ADO Center",
+    "description": "Reconnaître les collaborateurs stratégiques et les donateurs qui soutiennent notre mission."
+  },
+  "page": {
+    "title": "Partenaires et Donateurs",
+    "subtitle": "Collaborer pour bâtir une communauté plus forte et plus résiliente.",
+    "breadcrumb": "Nos Soutiens"
+  },
+  "becomePartner": {
+    "title": "Devenir un Partenaire",
+    "description": "Nous recherchons activement des partenariats avec des organisations qui partagent notre engagement à améliorer la santé mentale et le soutien psychosocial à La Gonâve.",
+    "contactUs": "Contactez-nous pour Collaborer"
+  }
+}

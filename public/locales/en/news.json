@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "News & Events | ADO Center",
+    "description": "Latest updates, events, and success stories from the ADO Mental Health Support Center."
+  },
+  "page": {
+    "title": "News & Events",
+    "subtitle": "Stay updated on our latest program activities, community outreach, and upcoming events.",
+    "breadcrumb": "Updates"
+  },
+  "sections": {
+    "latestNews": "Latest News"
+  },
+  "items": [
+    {
+      "title": "New Mental Health Awareness Campaign Launched in Schools",
+      "date": "June 15, 2026",
+      "category": "Program Activities",
+      "excerpt": "The ADO Center has successfully launched a comprehensive mental health awareness program across 10 local schools in La Gonâve..."
+    },
+    {
+      "title": "Community Outreach Reaches 500 Families",
+      "date": "May 28, 2026",
+      "category": "Community Outreach",
+      "excerpt": "Our dedicated team of Community Health Workers visited remote areas this month, providing essential psychoeducation and support..."
+    },
+    {
+      "title": "Success Story: Rebuilding After Trauma",
+      "date": "April 10, 2026",
+      "category": "Success Stories",
+      "excerpt": "Read about how our trauma recovery program helped local residents rebuild their lives and find hope after the recent natural disasters..."
+    }
+  ],
+  "actions": {
+    "readMore": "Read Full Story"
+  }
+}

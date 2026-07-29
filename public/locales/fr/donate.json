@@ -1,0 +1,88 @@
+{
+  "seo": {
+    "title": "Soutenez Notre Mission | Faites un don à ADO Center",
+    "description": "Votre contribution aide à élargir l'accès aux conseils, aux soins psychiatriques et aux initiatives de santé mentale communautaire à La Gonâve, Haïti."
+  },
+  "hero": {
+    "title": "Ayez un Impact Durable sur la Santé Mentale",
+    "subtitle": "Votre généreux don aide l'ADO Center à fournir des soins psychologiques essentiels, des conseils et un soutien communautaire à La Gonâve, Haïti.",
+    "secure_badge": "Don Sécurisé"
+  },
+  "impact": {
+    "title": "Votre Soutien Transforme des Vies",
+    "description": "En faisant un don au Centre de Santé Mentale ADO, vous financez directement des services psychologiques critiques, des soins psychiatriques et des programmes de sensibilisation communautaire pour les individus et les familles à Anse-à-Galets.",
+    "cards": {
+      "25": "Soutient une séance de conseil",
+      "50": "Fournit une thérapie familiale pendant un mois",
+      "100": "Finance un atelier communautaire sur la santé mentale",
+      "250": "Parraine les soins psychiatriques de 5 patients"
+    }
+  },
+  "form": {
+    "steps": {
+      "amount": "Montant",
+      "details": "Détails",
+      "payment": "Paiement"
+    },
+    "amount": {
+      "give_once": "Donner Une Fois",
+      "give_monthly": "Donner Mensuellement",
+      "custom": "Autre",
+      "custom_placeholder": "Entrez le montant",
+      "next": "Suivant"
+    },
+    "details": {
+      "labels": {
+        "fullName": "Nom Complet *",
+        "email": "Adresse E-mail *",
+        "phone": "Téléphone (Optionnel)",
+        "country": "Pays"
+      },
+      "placeholders": {
+        "fullName": "Jean Dupont",
+        "email": "jean@exemple.com",
+        "phone": "+1 (555) 000-0000",
+        "country": "France"
+      },
+      "validation": {
+        "name_required": "Le nom est requis",
+        "email_required": "L'e-mail est requis",
+        "email_invalid": "Adresse e-mail invalide"
+      },
+      "continue": "Passer au Paiement"
+    },
+    "payment": {
+      "donating": "Vous donnez",
+      "monthly": "par mois",
+      "one_time": "une fois",
+      "name": "Nom",
+      "email": "E-mail",
+      "total": "Total",
+      "usd": "USD",
+      "complete": "Terminer le Paiement",
+      "processing": "Traitement...",
+      "secure_note": "Les paiements sont traités en toute sécurité par Stripe."
+    },
+    "errors": {
+      "network": "Erreur réseau. Veuillez réessayer plus tard.",
+      "failed": "Échec du paiement. Veuillez réessayer."
+    }
+  },
+  "success": {
+    "seo_title": "Don Réussi | ADO Center",
+    "title": "Merci pour votre générosité !",
+    "message": "Votre don a été traité avec succès. Nous avons envoyé un reçu à votre adresse e-mail.",
+    "impact_message": "Votre soutien nous permet directement de fournir des services de santé mentale, des conseils et des programmes communautaires vitaux à La Gonâve.",
+    "button": "Retourner à l'Accueil"
+  },
+  "cancel": {
+    "seo_title": "Don Annulé | ADO Center",
+    "title": "Don Annulé",
+    "message": "Votre processus de don a été annulé et vous n'avez pas été facturé.",
+    "impact_message": "Si vous avez rencontré des problèmes techniques ou si vous avez des questions sur le soutien à notre mission, n'hésitez pas à nous contacter.",
+    "buttons": {
+      "try_again": "Réessayer",
+      "contact": "Contacter le Support"
+    }
+  }
+}

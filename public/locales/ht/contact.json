@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Kontakte Nou | ADO Center",
+    "description": "Kontakte Sant Sipò pou Sante Mantal ADO nan La Gonâve pou sipò, kesyon, oswa ijans."
+  },
+  "header": {
+    "title": "Kontakte Nou",
+    "subtitle": "Nou la pou ede. Kontakte ekip nou an pou sipò, kesyon, oswa opòtinite patenarya.",
+    "breadcrumb": "Mete an Kontak"
+  },
+  "support": {
+    "title": "Jwenn Sipò",
+    "description": "Kit w ap chèche sipò sikolojik, gen kesyon sou pwogram kominotè nou yo, oswa ou vle kolabore, ekip nou an pare pou ede w. Tanpri ranpli fòm nan oswa itilize enfòmasyon kontak dirèk nou yo.",
+    "location": {
+      "title": "Kote Nou Ye",
+      "address": "Sant pou Byennèt Sikolojik ak Sipò Sante Mantal<br/>Anse-à-Galets, La Gonâve, Ayiti"
+    },
+    "phone": {
+      "title": "Telefòn",
+      "value": "+509 XXXX XXXX"
+    },
+    "email": {
+      "title": "Imèl",
+      "value": "contact@adocenter.org"
+    },
+    "hours": {
+      "title": "Lè Travay",
+      "value": "Lendi - Vandredi: 8:00 AM - 5:00 PM<br/>Samdi ak Dimanch: Fèmen"
+    },
+    "emergency": {
+      "title": "Kontak Ijans",
+      "description": "Si ou menm oswa yon moun ou konnen ap fè fas ak yon ijans sante mantal, tanpri kontakte liy kriz 24/7 nou an imedyatman nan <strong className=\"font-bold\">+509 YYYY YYYY</strong> oswa ale nan chanm ijans ki pi pre a."
+    }
+  },
+  "form": {
+    "title": "Voye Yon Mesaj Pou Nou",
+    "labels": {
+      "name": "Non Konplè",
+      "email": "Adrès Imèl",
+      "phone": "Nimewo Telefòn",
+      "subject": "Sijè",
+      "message": "Mesaj"
+    },
+    "placeholders": {
+      "name": "Non konplè ou",
+      "email": "Imèl ou",
+      "phone": "Telefòn ou",
+      "subject": "Sijè",
+      "message": "Ekri mesaj ou la a"
+    },
+    "submit": "Voye Mesaj"
+  }
+}

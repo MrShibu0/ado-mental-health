@@ -1,0 +1,41 @@
+{
+  "title": "Sèvis Sante Mantal | ADO Center",
+  "description": "Eksplore sèvis konplè swen sikolojik ak sikiatrik nou yo ki disponib nan La Gonâve.",
+  "headerTitle": "Sèvis Sante Mantal",
+  "headerSubtitle": "Swen pwofesyonèl ki fèt pou ede moun ak fanmi yo reyisi nan yon anviwònman ki an sekirite ak konfidansyèl.",
+  "breadcrumb": "Sèvis Nou Yo",
+  "list": {
+    "psychological-assessments": {
+      "title": "Evalyasyon Sikolojik",
+      "description": "Evalyasyon konplè pou idantifye pwoblèm emosyonèl, konpòtman, devlopman, ak sikolojik."
+    },
+    "psychiatric-consultations": {
+      "title": "Konsiltasyon Sikyatrik",
+      "description": "Evalyasyon sikyatrik pwofesyonèl, dyagnostik, planifikasyon tretman, ak jesyon medikaman."
+    },
+    "individual-therapy": {
+      "title": "Terapi Endividyèl",
+      "description": "Konsèy ki baze sou prèv pou depresyon, enkyetid, chòk, estrès, dèy, ak defi emosyonèl."
+    },
+    "family-therapy": {
+      "title": "Terapi Fanmi",
+      "description": "Ede fanmi yo amelyore kominikasyon, relasyon, rezolisyon konfli, ak sistèm sipò."
+    },
+    "group-therapy": {
+      "title": "Terapi an Gwoup",
+      "description": "Sesyon gwoup terapetik estriktire ki ankouraje gerizon, sipò, ak aprantisaj pataje."
+    },
+    "crisis-intervention": {
+      "title": "Entèvansyon nan Kriz",
+      "description": "Sipò imedya pou kriz emosyonèl, detrès egi, ak sitiyasyon ijan sante mantal."
+    },
+    "substance-use-support": {
+      "title": "Sipò pou Moun k ap Sèvi ak Sibstans",
+      "description": "Sèvis ki konsantre sou rekiperasyon pou moun ki afekte pa dejwe ak twoub itilizasyon sibstans."
+    },
+    "older-adult-care": {
+      "title": "Swen Sante Mantal pou Granmoun Aje",
+      "description": "Sèvis espesyalize ki adrese bezwen sikolojik ak emosyonèl popilasyon k ap granmoun yo."
+    }
+  }
+}

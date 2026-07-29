@@ -1,0 +1,336 @@
+{
+  "seo": {
+    "title": "ADO Mental Health Support Center | La Gonâve, Haiti",
+    "description": "Providing accessible psychological support, counseling services, and community-based mental health services in Anse-à-Galets, La Gonâve."
+  },
+  "hero": {
+    "badge": "Mental Health & Psychosocial Support",
+    "title": "Strengthening Mental Well-being and Building Resilient Communities in La Gonâve, Haiti",
+    "subtitle": "Empowering individuals, families, and communities through compassionate counseling, psychiatric care, psychosocial support, prevention programs, and mental health education.",
+    "buttons": {
+      "getSupport": "Get Support",
+      "donateNow": "Donate Now",
+      "learnMore": "Learn More About Us"
+    },
+    "trustCards": {
+      "confidential": "Confidential Care",
+      "licensed": "Licensed Professionals",
+      "community": "Community-Based Support",
+      "evidence": "Evidence-Based Practice"
+    }
+  },
+  "trustIndicators": {
+    "items": [
+      "Confidential",
+      "Licensed Professionals",
+      "Inclusive Care",
+      "Evidence-Based",
+      "Community Focused",
+      "Affordable Services"
+    ]
+  },
+  "animatedImpact": {
+    "items": {
+      "supported": {
+        "number": "2000",
+        "suffix": "+",
+        "title": "Individuals Supported",
+        "desc": "Providing compassionate mental health services every year."
+      },
+      "professionals": {
+        "number": "7",
+        "suffix": "+",
+        "title": "Dedicated Professionals",
+        "desc": "A team of licensed and highly trained clinical experts."
+      },
+      "outreach": {
+        "number": "10",
+        "suffix": "+",
+        "title": "Community Outreach Programs",
+        "desc": "Actively educating and supporting local neighborhoods."
+      },
+      "confidential": {
+        "number": "100",
+        "suffix": "%",
+        "title": "Confidential & Compassionate Care",
+        "desc": "Ensuring a safe, private environment for every individual."
+      }
+    }
+  },
+  "welcome": {
+    "title": "Welcome to ADO Center",
+    "subtitle": "Building hope, resilience, and healthier communities through accessible mental health and psychosocial support.",
+    "p1": "ADO Center is a community-focused mental health and psychosocial support organization dedicated to improving the emotional well-being and quality of life of individuals and families in Anse-à-Galets, La Gonâve, Haiti.",
+    "p2": "Our organization believes that mental health is a fundamental human right. We work to ensure that children, adolescents, adults, older adults, and vulnerable populations have access to compassionate, confidential, and evidence-based mental health services regardless of their social or economic background.",
+    "button": "Discover Our Story"
+  },
+  "whyMentalHealth": {
+    "title": "Why Mental Health Matters",
+    "items": {
+      "wellbeing": "Mental Well-being",
+      "family": "Family Stability",
+      "education": "Education",
+      "community": "Community Development",
+      "hope": "Hope & Recovery",
+      "inclusion": "Social Inclusion"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional care designed to help individuals and families thrive in a safe, confidential environment.",
+    "learnMore": "Learn More",
+    "viewAll": "View All Services",
+    "items": {
+      "counseling": {
+        "title": "Individual Counseling",
+        "desc": "One-on-one therapy sessions with licensed professionals to address personal challenges."
+      },
+      "group": {
+        "title": "Group Therapy",
+        "desc": "Supportive group settings facilitated by experts to share experiences and build resilience."
+      },
+      "family": {
+        "title": "Family Therapy",
+        "desc": "Collaborative sessions aimed at improving communication and resolving conflicts within families."
+      },
+      "crisis": {
+        "title": "Crisis Intervention",
+        "desc": "Immediate, short-term assistance for individuals experiencing acute psychological distress."
+      },
+      "psychiatric": {
+        "title": "Psychiatric Care",
+        "desc": "Comprehensive medical evaluation and treatment for severe mental health conditions."
+      },
+      "community": {
+        "title": "Community Outreach",
+        "desc": "Educational programs and workshops to raise awareness and reduce mental health stigma."
+      }
+    }
+  },
+  "howWeHelp": {
+    "title": "How We Help",
+    "steps": {
+      "reachOut": {
+        "title": "Reach Out",
+        "desc": "Contact our team."
+      },
+      "assessment": {
+        "title": "Assessment",
+        "desc": "Receive professional evaluation."
+      },
+      "care": {
+        "title": "Personalized Care",
+        "desc": "Individual treatment and support plan."
+      },
+      "recovery": {
+        "title": "Recovery & Growth",
+        "desc": "Continuous support toward well-being."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose ADO Center",
+    "items": {
+      "licensed": {
+        "title": "Licensed Professionals",
+        "desc": "Expert care from trained and certified mental health specialists."
+      },
+      "confidential": {
+        "title": "Confidential Care",
+        "desc": "Your privacy is our utmost priority in every interaction."
+      },
+      "compassionate": {
+        "title": "Compassionate Support",
+        "desc": "Empathetic, judgment-free care tailored to your needs."
+      },
+      "outreach": {
+        "title": "Community Outreach",
+        "desc": "Actively engaging with local groups to foster collective resilience."
+      },
+      "evidence": {
+        "title": "Evidence-Based Practice",
+        "desc": "Treatments proven by scientific research and clinical success."
+      },
+      "affordable": {
+        "title": "Affordable & Accessible Services",
+        "desc": "Breaking down financial barriers to ensure everyone gets help."
+      }
+    }
+  },
+  "outreach": {
+    "title": "Community Outreach",
+    "items": {
+      "schools": "Schools",
+      "families": "Families",
+      "counseling": "Counseling",
+      "workshops": "Workshops",
+      "youth": "Youth",
+      "events": "Community Events"
+    }
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "founder": {
+      "name": "Ruthe Antoine, LCSW, CSSW",
+      "role": "Founder & CEO",
+      "bio": "Dedicated to accessible, compassionate mental health care for the people of La Gonâve."
+    },
+    "comingSoon": "Team Member Coming Soon",
+    "button": "Meet Our Team"
+  },
+  "successStories": {
+    "title": "Success Stories",
+    "readMore": "Read More",
+    "items": [
+      {
+        "title": "Improved Family Well-being",
+        "summary": "Through family therapy, they learned to communicate effectively and rebuilt their trust."
+      },
+      {
+        "title": "Youth Counseling Success",
+        "summary": "A teenager found the strength to overcome anxiety and return to school with confidence."
+      },
+      {
+        "title": "Community Awareness Initiative",
+        "summary": "Our recent workshop reached over 200 local leaders, sparking vital conversations."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {
+        "quote": "The support I received changed my life. I finally feel understood and equipped to handle my challenges.",
+        "name": "Community Member",
+        "location": "Anse-à-Galets"
+      },
+      {
+        "quote": "Our school environment has completely transformed since the mental health awareness workshops.",
+        "name": "Local Teacher",
+        "location": "La Gonâve"
+      },
+      {
+        "quote": "The center provides a safe haven. Their dedication to confidentiality and care is unmatched.",
+        "name": "Program Participant",
+        "location": "Anse-à-Galets"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Our Partners & Collaborators",
+    "groups": {
+      "healthcare": "Healthcare",
+      "education": "Education",
+      "community": "Community",
+      "government": "Government",
+      "ngos": "NGOs"
+    },
+    "placeholder": "Partner Logo"
+  },
+  "volunteer": {
+    "title": "Volunteer With Us",
+    "desc": "Support community outreach, awareness campaigns, and mental health education. Your time can change a life.",
+    "buttons": {
+      "become": "Become a Volunteer",
+      "learnMore": "Learn More"
+    }
+  },
+  "supportMission": {
+    "title": "Support Our Mission",
+    "subtitle": "Your generous donation helps us provide essential mental health services to those in need.",
+    "cta": "Donate Today",
+    "items": {
+      "25": {
+        "amount": "$25",
+        "desc": "Supports one counseling session."
+      },
+      "100": {
+        "amount": "$100",
+        "desc": "Funds a community workshop."
+      },
+      "250": {
+        "amount": "$250",
+        "desc": "Provides mental health resources."
+      },
+      "500": {
+        "amount": "$500",
+        "desc": "Supports outreach in underserved communities."
+      }
+    }
+  },
+  "faqPreview": {
+    "title": "Frequently Asked Questions",
+    "button": "View All FAQs",
+    "questions": [
+      {
+        "q": "Are your services completely confidential?",
+        "a": "Yes, all consultations and treatments are strictly confidential."
+      },
+      {
+        "q": "Who is eligible to receive support?",
+        "a": "We serve children, adolescents, adults, and older adults from all backgrounds."
+      },
+      {
+        "q": "Do you offer family counseling?",
+        "a": "Yes, we provide specialized family therapy sessions."
+      },
+      {
+        "q": "How can I schedule an appointment?",
+        "a": "You can call us directly, send a WhatsApp message, or use our contact form."
+      }
+    ]
+  },
+  "latestNews": {
+    "title": "Latest News & Updates",
+    "readMore": "Read More",
+    "items": [
+      {
+        "category": "Community",
+        "date": "March 15, 2026",
+        "title": "New Outreach Program Launched",
+        "summary": "We are expanding our services to reach more remote areas of La Gonâve."
+      },
+      {
+        "category": "Education",
+        "date": "February 28, 2026",
+        "title": "Mental Health Workshop Success",
+        "summary": "Over 50 teachers attended our recent workshop on student well-being."
+      },
+      {
+        "category": "Updates",
+        "date": "January 10, 2026",
+        "title": "Welcoming New Clinical Staff",
+        "summary": "ADO Center is thrilled to introduce three new licensed professionals to our team."
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Stay Connected",
+    "text": "Receive updates about programs, events, and community initiatives.",
+    "placeholder": "Enter your email address",
+    "button": "Subscribe",
+    "success": "Thank you for subscribing!"
+  },
+  "contactPreview": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Office Hours",
+    "whatsapp": "WhatsApp",
+    "buttons": {
+      "call": "Call Now",
+      "email": "Send Email",
+      "directions": "Directions"
+    }
+  },
+  "finalCTA": {
+    "title": "Together We Can Build Healthier Communities",
+    "text": "Every conversation creates hope. Every act of compassion changes lives. Join us in expanding access to mental health care across La Gonâve.",
+    "buttons": {
+      "getSupport": "Get Support",
+      "donate": "Donate Now",
+      "volunteer": "Volunteer"
+    }
+  }
+}

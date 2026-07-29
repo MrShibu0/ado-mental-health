@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Haitian Blue Background with slightly rounded corners -->
+  <rect width="16" height="16" rx="4" fill="#00209F"/>
+  
+  <!-- Haitian Red Heart representing care and well-being -->
+  <path d="M8 13.5s-5.5-4-5.5-7.5c0-1.8 1.4-3 3-3 1.2 0 2.2.8 2.5 1.8.3-1 1.3-1.8 2.5-1.8 1.6 0 3 1.2 3 3 0 3.5-5.5 7.5-5.5 7.5z" fill="#D21034"/>
+  
+  <!-- White spark/mind element for psychological clarity -->
+  <circle cx="8" cy="6.5" r="1.5" fill="#FFFFFF" opacity="0.9"/>
+</svg>

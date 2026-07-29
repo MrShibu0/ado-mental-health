@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Contact Us | ADO Center",
+    "description": "Get in touch with the ADO Mental Health Support Center in La Gonâve for support, inquiries, or emergencies."
+  },
+  "header": {
+    "title": "Contact Us",
+    "subtitle": "We are here to help. Reach out to our team for support, inquiries, or partnership opportunities.",
+    "breadcrumb": "Get in Touch"
+  },
+  "support": {
+    "title": "Get Support",
+    "description": "Whether you are seeking psychological support, have questions about our community programs, or wish to collaborate, our team is ready to assist you. Please fill out the form or use our direct contact information.",
+    "location": {
+      "title": "Our Location",
+      "address": "Psychological Well-being and Mental Health Support Center<br/>Anse-à-Galets, La Gonâve, Haiti"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "+509 XXXX XXXX"
+    },
+    "email": {
+      "title": "Email",
+      "value": "contact@adocenter.org"
+    },
+    "hours": {
+      "title": "Office Hours",
+      "value": "Monday - Friday: 8:00 AM - 5:00 PM<br/>Saturday & Sunday: Closed"
+    },
+    "emergency": {
+      "title": "Emergency Contact",
+      "description": "If you or someone you know is experiencing a mental health emergency, please contact our 24/7 crisis line immediately at <strong className=\"font-bold\">+509 YYYY YYYY</strong> or go to the nearest emergency room."
+    }
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "labels": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Your full name",
+      "email": "Your email",
+      "phone": "Your phone",
+      "subject": "Subject",
+      "message": "Write your message here"
+    },
+    "submit": "Send Message"
+  }
+}

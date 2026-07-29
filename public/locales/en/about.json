@@ -1,0 +1,211 @@
+{
+  "title": "About Us | ADO Mental Health Center",
+  "description": "Learn about our background, vision, and mission to improve psychological well-being in La Gonâve.",
+  "hero": {
+    "badge": "About ADO Center",
+    "title": "Building Stronger, Healthier Communities",
+    "subtitle": "We are dedicated to providing accessible, compassionate mental health and psychosocial support to individuals and families across La Gonâve.",
+    "buttons": {
+      "learnMore": "Learn More",
+      "contactUs": "Contact Us"
+    }
+  },
+  "intro": {
+    "title": "About ADO Center",
+    "subtitle": "Building hope, resilience, and healthier communities through accessible mental health and psychosocial support.",
+    "p1": "ADO Center is a community-focused mental health and psychosocial support organization dedicated to improving the emotional well-being and quality of life of individuals and families in Anse-à-Galets, La Gonâve, Haiti.",
+    "p2": "Our organization believes that mental health is a fundamental human right. We work to ensure that children, adolescents, adults, older adults, and vulnerable populations have access to compassionate, confidential, and evidence-based mental health services regardless of their social or economic background.",
+    "p3": "Through counseling, psychiatric care, psychosocial support, education, and community outreach, we strive to create healthier individuals, stronger families, and more resilient communities."
+  },
+  "story": {
+    "title": "Our Story",
+    "p1": "The ADO Center was established in response to the growing and critical need for mental health services in La Gonâve. The community faces numerous challenges, including poverty, limited healthcare access, geographic isolation, and the lingering effects of recurring natural disasters.",
+    "p2": "These overwhelming challenges have contributed to increased rates of depression, anxiety, psychological trauma, substance use disorders, and severe untreated psychiatric conditions, often leaving individuals and families without a place to turn.",
+    "p3": "Driven by the vision of creating accessible and sustainable mental health care, we set out to build a center that not only provides professional treatment but also actively works to reduce the stigma surrounding mental illness in our culture.",
+    "p4": "Today, we stand as a beacon of hope, bringing professional mental health and psychosocial support services directly to the people who need them most."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "To improve psychological well-being, strengthen resilience, and expand access to high-quality mental health and psychosocial support services for individuals, families, and communities throughout La Gonâve."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "text": "A future where every individual has access to compassionate, affordable, and culturally appropriate mental health care, empowering communities to thrive with dignity, hope, and resilience."
+  },
+  "founder": {
+    "title": "Our Founder",
+    "name": "Ruthe Antoine, LCSW, CSSW",
+    "role": "Founder & CEO",
+    "bio1": "Ruthe Antoine founded the ADO Center with a profound vision: to ensure that no one in La Gonâve has to face mental health challenges alone.",
+    "bio2": "With extensive experience in clinical social work, she recognized the critical gap in mental health services and the devastating impact of untreated trauma and psychological distress within the community.",
+    "bio3": "Her commitment to accessible, compassionate mental health care drives the center's mission to break down barriers, eliminate stigma, and provide culturally responsive support that truly empowers individuals and families to heal and thrive."
+  },
+  "coreValues": {
+    "title": "Our Core Values",
+    "items": {
+      "Compassion": {
+        "title": "Compassion",
+        "desc": "Providing care with empathy, kindness, and respect."
+      },
+      "Integrity": {
+        "title": "Integrity",
+        "desc": "Acting with honesty, transparency, and professionalism."
+      },
+      "Confidentiality": {
+        "title": "Confidentiality",
+        "desc": "Protecting every individual's privacy and trust."
+      },
+      "Inclusion": {
+        "title": "Inclusion",
+        "desc": "Serving all people regardless of age, gender, religion, or background."
+      },
+      "Excellence": {
+        "title": "Excellence",
+        "desc": "Delivering evidence-based, high-quality mental health services."
+      },
+      "CommunityEmpowerment": {
+        "title": "Community Empowerment",
+        "desc": "Strengthening communities through education, collaboration, and prevention."
+      }
+    }
+  },
+  "guidingPrinciples": {
+    "title": "Our Guiding Principles",
+    "items": {
+      "Respect": "Respect",
+      "Dignity": "Dignity",
+      "Equity": "Equity",
+      "Compassion": "Compassion",
+      "Collaboration": "Collaboration",
+      "Accountability": "Accountability"
+    }
+  },
+  "whyMatters": {
+    "title": "Why Mental Health Matters",
+    "p1": "Mental health affects every aspect of life, including education, employment, family relationships, physical health, and community development.",
+    "p2": "By investing in mental health, communities become healthier, stronger, safer, and more resilient. We believe that true well-being is impossible without mental well-being."
+  },
+  "whoWeServe": {
+    "title": "Who We Serve",
+    "items": [
+      "Children",
+      "Adolescents",
+      "Adults",
+      "Older Adults",
+      "Families",
+      "Pregnant Women",
+      "Survivors of Trauma",
+      "Individuals Living with Mental Health Conditions",
+      "People Affected by Substance Use Disorders",
+      "Schools and Community Organizations"
+    ]
+  },
+  "ourApproach": {
+    "title": "Our Approach",
+    "steps": {
+      "Assessment": {
+        "title": "Assessment",
+        "desc": "Comprehensive evaluation to understand individual needs."
+      },
+      "PersonalizedCare": {
+        "title": "Personalized Care",
+        "desc": "Evidence-based treatment plans tailored for each person."
+      },
+      "CommunitySupport": {
+        "title": "Community Support",
+        "desc": "Integrating social networks and local resources for holistic healing."
+      },
+      "LongTermRecovery": {
+        "title": "Long-Term Recovery",
+        "desc": "Ongoing care and skill-building for sustainable resilience."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose ADO Center",
+    "items": {
+      "Licensed": {
+        "title": "Licensed Professionals",
+        "desc": "Expert care from trained and certified mental health specialists."
+      },
+      "Confidential": {
+        "title": "Confidential Care",
+        "desc": "Your privacy is our utmost priority in every interaction."
+      },
+      "Community": {
+        "title": "Community-Based Services",
+        "desc": "Care delivered locally, understanding your cultural context."
+      },
+      "Evidence": {
+        "title": "Evidence-Based Practice",
+        "desc": "Treatments proven by scientific research and clinical success."
+      },
+      "Holistic": {
+        "title": "Holistic Support",
+        "desc": "Addressing the mind, body, and social environment together."
+      },
+      "Affordable": {
+        "title": "Affordable & Accessible Care",
+        "desc": "Breaking down financial barriers to ensure everyone gets help."
+      }
+    }
+  },
+  "communityCommitment": {
+    "title": "Community Commitment",
+    "subtitle": "ADO Center actively collaborates with local partners to create a strong support network.",
+    "items": [
+      "Schools",
+      "Churches",
+      "Community Leaders",
+      "Healthcare Providers",
+      "Local Organizations"
+    ]
+  },
+  "longTermVision": {
+    "title": "Our Long-Term Vision",
+    "items": [
+      "Expand mental health access across all rural areas",
+      "Train local professionals and community health workers",
+      "Reduce stigma through widespread public education",
+      "Strengthen families with targeted counseling programs",
+      "Build resilient communities capable of supporting one another"
+    ]
+  },
+  "impact": {
+    "title": "Our Impact",
+    "items": {
+      "Served": {
+        "number": "2000",
+        "suffix": "+",
+        "title": "People Served Annually",
+        "desc": "Providing compassionate mental health support throughout La Gonâve."
+      },
+      "Confidential": {
+        "number": "100",
+        "suffix": "%",
+        "title": "Confidential Services",
+        "desc": "Ensuring a safe, private environment for every individual."
+      },
+      "Professionals": {
+        "number": "7",
+        "suffix": "+",
+        "title": "Dedicated Professionals",
+        "desc": "A team of licensed and highly trained clinical experts."
+      },
+      "Programs": {
+        "number": "10",
+        "suffix": "+",
+        "title": "Community Outreach Programs",
+        "desc": "Actively educating and supporting local neighborhoods and schools."
+      }
+    }
+  },
+  "cta": {
+    "title": "Together We Can Build Stronger Communities",
+    "text": "Every conversation, every act of compassion, and every opportunity for support brings hope to individuals and families facing mental health challenges.",
+    "buttons": {
+      "learnMore": "Learn More",
+      "contact": "Contact Us"
+    }
+  }
+}

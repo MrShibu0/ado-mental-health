@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Contactez-nous | ADO Center",
+    "description": "Entrez en contact avec le centre de soutien en santé mentale ADO à La Gonâve pour de l'aide, des demandes de renseignements ou des urgences."
+  },
+  "header": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes là pour vous aider. Contactez notre équipe pour obtenir du soutien, des renseignements ou des opportunités de partenariat.",
+    "breadcrumb": "Entrer en Contact"
+  },
+  "support": {
+    "title": "Obtenir du Soutien",
+    "description": "Que vous recherchiez un soutien psychologique, que vous ayez des questions sur nos programmes communautaires ou que vous souhaitiez collaborer, notre équipe est prête à vous aider. Veuillez remplir le formulaire ou utiliser nos coordonnées directes.",
+    "location": {
+      "title": "Notre Emplacement",
+      "address": "Centre de bien-être psychologique et de soutien en santé mentale<br/>Anse-à-Galets, La Gonâve, Haïti"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "value": "+509 XXXX XXXX"
+    },
+    "email": {
+      "title": "E-mail",
+      "value": "contact@adocenter.org"
+    },
+    "hours": {
+      "title": "Heures d'Ouverture",
+      "value": "Lundi - Vendredi : 8h00 - 17h00<br/>Samedi & Dimanche : Fermé"
+    },
+    "emergency": {
+      "title": "Contact d'Urgence",
+      "description": "Si vous ou quelqu'un que vous connaissez traversez une urgence de santé mentale, veuillez contacter notre ligne de crise 24h/7j immédiatement au <strong className=\"font-bold\">+509 YYYY YYYY</strong> ou rendez-vous aux urgences les plus proches."
+    }
+  },
+  "form": {
+    "title": "Envoyez-nous un Message",
+    "labels": {
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "phone": "Numéro de Téléphone",
+      "subject": "Sujet",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Votre nom complet",
+      "email": "Votre e-mail",
+      "phone": "Votre téléphone",
+      "subject": "Sujet",
+      "message": "Écrivez votre message ici"
+    },
+    "submit": "Envoyer le Message"
+  }
+}

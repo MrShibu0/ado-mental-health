@@ -1,0 +1,32 @@
+{
+  "metaTitle": "Formation et Renforcement des Capacités | ADO Center",
+  "metaDescription": "Renforcer les capacités locales en santé mentale grâce au développement professionnel et à la formation communautaire à La Gonâve.",
+  "pageTitle": "Formation et Renforcement des Capacités",
+  "pageSubtitle": "Renforcer l'expertise locale pour bâtir un écosystème de santé mentale durable et solidaire.",
+  "breadcrumb": "Éducation",
+  "sectionTitle": "Renforcement des Capacités Locales",
+  "sectionSubtitle": "Le centre autonomise la communauté et les professionnels par l'éducation continue et des programmes de renforcement des compétences.",
+  "trainings": [
+    {
+      "title": "Formation des Agents de Santé Communautaire",
+      "description": "Former les travailleurs de première ligne à reconnaître, soutenir et orienter les membres de la communauté souffrant de problèmes de santé mentale."
+    },
+    {
+      "title": "Formation des Enseignants et du Personnel Scolaire",
+      "description": "Créer des environnements scolaires favorables, identifier les changements de comportement et améliorer le bien-être des élèves."
+    },
+    {
+      "title": "Premiers Secours Psychologiques",
+      "description": "Doter les membres de la communauté et les professionnels de compétences pratiques de réponse aux crises pour les situations d'urgence."
+    },
+    {
+      "title": "Sensibilisation à la Santé Mentale",
+      "description": "Sessions complètes conçues pour réduire la stigmatisation, accroître la compréhension et promouvoir l'inclusivité."
+    },
+    {
+      "title": "Développement du Personnel Clinique",
+      "description": "Apprentissage professionnel continu, formation en éthique et mises à jour sur les pratiques fondées sur des données probantes pour les prestataires de soins."
+    }
+  ],
+  "imgAlt": "Formation et Renforcement des Capacités"
+}

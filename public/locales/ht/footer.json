@@ -1,0 +1,25 @@
+{
+  "mission_statement": "Ankouraje Byennèt Mantal, Ranfòse Kominote yo, Transfòme Lavi.",
+  "titles": {
+    "quick_links": "Lyen Rapid",
+    "contact_info": "Enfòmasyon Kontak",
+    "support_mission": "Sipòte Misyon Nou"
+  },
+  "links": {
+    "about": "Apwopo Nou",
+    "services": "Sèvis Sante Mantal",
+    "community": "Pwogram Kominotè",
+    "training": "Fòmasyon",
+    "team": "Resous Imen",
+    "impact": "Enpak Pwojè a"
+  },
+  "legal": {
+    "privacy": "Règleman sou Konfidansyalite",
+    "terms": "Kondisyon Sèvis"
+  },
+  "support_text": "Kontribisyon ou ede elaji aksè a konsèy, swen sikyatrik, ak inisyativ sante mantal kominotè.",
+  "buttons": {
+    "donate": "Fè yon Don Kounye a"
+  },
+  "copyright": "© {{year}} ADO Center. Tout dwa rezève."
+}

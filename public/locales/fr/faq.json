@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "FAQ | Centre de Soutien en Santé Mentale ADO",
+    "description": "Trouvez des réponses aux questions courantes sur nos services de santé mentale, le conseil, les soins psychiatriques et les programmes de sensibilisation communautaire au ADO Center."
+  },
+  "page": {
+    "title": "Foire Aux Questions",
+    "description": "Trouvez des réponses aux questions courantes sur nos services de santé mentale, le conseil, les soins psychiatriques, les programmes de sensibilisation et le soutien disponible par l'intermédiaire de ADO Center."
+  },
+  "faqs": [
+    {
+      "question": "Quels services fournit ADO Center ?",
+      "answer": "Nous offrons des conseils psychologiques, des consultations psychiatriques, des thérapies individuelles, familiales et de groupe, des interventions en cas de crise, l'éducation en santé mentale, la réadaptation psychosociale et des programmes de sensibilisation communautaire."
+    },
+    {
+      "question": "Qui peut recevoir des services ?",
+      "answer": "Les enfants, les adolescents, les adultes, les personnes âgées, les familles, les femmes enceintes, les survivants de traumatismes, les personnes vivant avec des problèmes de santé mentale et celles affectées par des troubles liés à l'utilisation de substances sont les bienvenus."
+    },
+    {
+      "question": "Ai-je besoin d'un rendez-vous ?",
+      "answer": "Les rendez-vous sont recommandés pour réduire le temps d'attente, mais les cas d'urgence et de crise sont pris en charge aussi rapidement que possible."
+    },
+    {
+      "question": "Les services sont-ils confidentiels ?",
+      "answer": "Oui. Chaque consultation est strictement confidentielle. Nous suivons des normes éthiques et professionnelles pour protéger la vie privée de chaque client."
+    },
+    {
+      "question": "Des médicaments psychiatriques seront-ils disponibles ?",
+      "answer": "Oui. Notre psychiatre évalue les patients et prescrit des médicaments uniquement lorsque cela est médicalement approprié."
+    },
+    {
+      "question": "Fournissez-vous des conseils pour les enfants ?",
+      "answer": "Oui. Nos psychologues offrent des conseils adaptés à l'âge et un soutien comportemental pour les enfants et les adolescents."
+    },
+    {
+      "question": "Organisez-vous des programmes de sensibilisation communautaire ?",
+      "answer": "Oui. Nous animons des ateliers dans les écoles, les églises, les organisations communautaires, ainsi que des campagnes de sensibilisation pour réduire la stigmatisation et améliorer l'éducation en santé mentale."
+    },
+    {
+      "question": "Les familles peuvent-elles participer à la thérapie ?",
+      "answer": "Absolument. Le conseil familial aide à renforcer les relations et soutient le rétablissement."
+    },
+    {
+      "question": "Combien coûtent les services ?",
+      "answer": "Notre objectif est de fournir des services de santé mentale abordables et accessibles. Les frais, le cas échéant, sont maintenus aussi bas que possible."
+    },
+    {
+      "question": "Comment puis-je soutenir ADO Center ?",
+      "answer": "Vous pouvez nous soutenir en faisant un don, en devenant bénévole, en vous associant à nos programmes ou en aidant à sensibiliser la communauté à la santé mentale."
+    }
+  ],
+  "cta": {
+    "title": "Vous avez encore des questions ?",
+    "description": "Notre équipe est là pour vous aider à trouver le bon soutien. Contactez-nous pour plus d'informations ou pour prendre rendez-vous.",
+    "button": "Contactez-nous"
+  }
+}

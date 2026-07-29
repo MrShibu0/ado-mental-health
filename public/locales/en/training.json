@@ -1,0 +1,32 @@
+{
+  "metaTitle": "Training & Capacity Building | ADO Center",
+  "metaDescription": "Strengthening local mental health capacity through professional development and community training in La Gonâve.",
+  "pageTitle": "Training & Capacity Building",
+  "pageSubtitle": "Strengthening local expertise to build a sustainable and supportive mental health ecosystem.",
+  "breadcrumb": "Education",
+  "sectionTitle": "Strengthening Local Capacity",
+  "sectionSubtitle": "The center empowers the community and professionals through ongoing education and skill-building programs.",
+  "trainings": [
+    {
+      "title": "Community Health Worker Training",
+      "description": "Training frontline workers to recognize, support, and refer community members with mental health concerns."
+    },
+    {
+      "title": "Teacher & School Personnel Training",
+      "description": "Building supportive school environments, identifying behavioral changes, and improving student well-being."
+    },
+    {
+      "title": "Psychological First Aid",
+      "description": "Equipping community members and professionals with practical crisis-response skills for emergencies."
+    },
+    {
+      "title": "Mental Health Awareness",
+      "description": "Comprehensive sessions designed to reduce stigma, increase understanding, and promote inclusivity."
+    },
+    {
+      "title": "Clinical Staff Development",
+      "description": "Continuous professional learning, ethics training, and evidence-based practice updates for healthcare providers."
+    }
+  ],
+  "imgAlt": "Training and Capacity Building"
+}

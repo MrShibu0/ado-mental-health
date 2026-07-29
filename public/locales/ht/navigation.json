@@ -1,0 +1,24 @@
+{
+  "links": {
+    "home": "Akèy",
+    "about": "Apwopo",
+    "services": "Sèvis",
+    "community": "Kominote",
+    "training": "Fòmasyon",
+    "team": "Ekip",
+    "impact": "Enpak",
+    "gallery": "Galri",
+    "faq": "FAQ",
+    "partners": "Patenè",
+    "news": "Nouvèl",
+    "contact": "Kontak"
+  },
+  "buttons": {
+    "donate": "Fè yon Don"
+  },
+  "mobile": {
+    "language": "Lang",
+    "close_menu": "Fèmen meni an",
+    "open_menu": "Louvri meni prensipal la"
+  }
+}

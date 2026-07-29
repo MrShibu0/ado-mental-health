@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "FAQ | Sant Sipò Sante Mantal ADO",
+    "description": "Jwenn repons pou kesyon komen sou sèvis sante mantal nou yo, konsèy, swen sikyatrik, ak pwogram sansibilizasyon kominotè nan ADO Center."
+  },
+  "page": {
+    "title": "Kesyon Yo Poze Souvan",
+    "description": "Jwenn repons pou kesyon komen sou sèvis sante mantal nou yo, konsèy, swen sikyatrik, pwogram sansibilizasyon, ak sipò ki disponib nan ADO Center."
+  },
+  "faqs": [
+    {
+      "question": "Ki sèvis ADO Center ofri?",
+      "answer": "Nou bay konsèy sikolojik, konsiltasyon sikyatrik, terapi endividyèl, terapi familyal, terapi gwoup, entèvansyon nan kriz, edikasyon sante mantal, reyabilitasyon sikososyal, ak pwogram sansibilizasyon nan kominote a."
+    },
+    {
+      "question": "Kiyès ki ka resevwa sèvis yo?",
+      "answer": "Timoun, adolesan, granmoun, moun aje, fanmi, fanm ansent, sivivan chòk, moun k ap viv ak pwoblèm sante mantal, ak moun ki afekte nan pwoblèm itilizasyon sibstans, tout moun byenveni."
+    },
+    {
+      "question": "Èske mwen bezwen pran yon randevou?",
+      "answer": "Nou rekòmande randevou pou diminye tan datant, men nou okipe ka ijans ak kriz yo pi vit posib."
+    },
+    {
+      "question": "Èske sèvis yo konfidansyèl?",
+      "answer": "Wi. Chak konsiltasyon se konfidansyèl nèt. Nou swiv prensip etik ak pwofesyonèl pou pwoteje vi prive chak kliyan."
+    },
+    {
+      "question": "Èske ap gen medikaman sikyatrik?",
+      "answer": "Wi. Sikyat nou an evalye pasyan yo epi li preskri medikaman sèlman lè li apwopriye medikalman."
+    },
+    {
+      "question": "Èske nou ofri konsèy pou timoun?",
+      "answer": "Wi. Sikològ nou yo ofri konsèy ki apwopriye ak laj timoun ak adolesan ansanm ak sipò konpòtman."
+    },
+    {
+      "question": "Èske nou òganize pwogram sansibilizasyon nan kominote a?",
+      "answer": "Wi. Nou fè atelye nan lekòl, legliz, òganizasyon kominotè, ak kanpay pou piblik la pou diminye stigma epi amelyore edikasyon sou sante mantal."
+    },
+    {
+      "question": "Èske fanmi yo ka patisipe nan terapi?",
+      "answer": "Absoliman. Konsèy familyal ede ranfòse relasyon yo ak sipòte rekiperasyon an."
+    },
+    {
+      "question": "Konbyen sèvis yo koute?",
+      "answer": "Objektif nou se bay sèvis sante mantal abòdab ak aksesib. Frè yo, si genyen, rete osi ba ke posib."
+    },
+    {
+      "question": "Kijan mwen ka sipòte ADO Center?",
+      "answer": "Ou ka sipòte nou lè w fè don, lè w fè volontè, nan fè patenarya ak pwogram nou yo, oswa lè w ede sansibilize moun sou sante mantal nan kominote nou yo."
+    }
+  ],
+  "cta": {
+    "title": "Ou gen lòt kesyon?",
+    "description": "Ekip nou an la pou ede w jwenn bon sipò a. Kontakte nou pou plis enfòmasyon oswa pou planifye yon randevou.",
+    "button": "Kontakte Nou"
+  }
+}
