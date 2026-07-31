@@ -100,7 +100,7 @@ if (process.env.NODE_ENV === "production" || process.env.RENDER) {
   app.use(express.static(distPath));
   
   // Catch-all route to serve the React SPA entry index.html for all non-API paths
-  app.get("/*", (req, res, next) => {
+  app.get("/:splat*", (req, res, next) => {
     if (req.path.startsWith("/api") || req.path.startsWith("/uploads")) {
       return next();
     }
