@@ -94,6 +94,20 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "ok", message: "ADO Backend is running" });
 });
 
+// Serve production frontend assets from the Vite build directory
+if (process.env.NODE_ENV === "production" || process.env.RENDER) {
+  const distPath = path.join(process.cwd(), "dist");
+  app.use(express.static(distPath));
+  
+  // Catch-all route to serve the React SPA entry index.html for all non-API paths
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api") || req.path.startsWith("/uploads")) {
+      return next();
+    }
+    res.sendFile(path.join(distPath, "index.html"));
+  });
+}
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
