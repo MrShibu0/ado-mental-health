@@ -16,8 +16,8 @@ const navigationLinks = [
   { key: "team", href: "/team" },
   { key: "impact", href: "/impact" },
   { key: "gallery", href: "/gallery" },
-  { key: "faq", href: "/faq" },
-  { key: "partners", href: "/partners" },
+  { key: "faq", href: "/faq", className: "hidden 2xl:inline-block" },
+  { key: "partners", href: "/partners", className: "hidden 2xl:inline-block" },
   { key: "news", href: "/news" },
   { key: "contact", href: "/contact" },
 ];
@@ -94,7 +94,8 @@ export const Navbar = () => {
                 to={item.href}
                 className={cn(
                   "relative text-[12px] font-[500] transition-all duration-250 hover:-translate-y-[2px] hover:text-[#2563EB] py-1.5 px-2 rounded-full group whitespace-nowrap",
-                  isActive ? "text-[#1E3A8A] bg-[#1E3A8A]/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,1)]" : "text-[#1E293B]"
+                  isActive ? "text-[#1E3A8A] bg-[#1E3A8A]/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,1)]" : "text-[#1E293B]",
+                  item.className
                 )}
               >
                 {t(`links.${item.key}`)}
