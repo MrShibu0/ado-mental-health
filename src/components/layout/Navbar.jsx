@@ -22,6 +22,24 @@ const navigationLinks = [
   { key: "contact", href: "/contact" },
 ];
 
+const getFallbackLabel = (key) => {
+  const fallbacks = {
+    home: "Home",
+    about: "About",
+    services: "Services",
+    community: "Community",
+    training: "Training",
+    team: "Team",
+    impact: "Impact",
+    gallery: "Gallery",
+    faq: "FAQ",
+    partners: "Partners",
+    news: "News",
+    contact: "Contact"
+  };
+  return fallbacks[key] || key;
+};
+
 export const Navbar = () => {
   const { t } = useTranslation("navigation");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -98,7 +116,7 @@ export const Navbar = () => {
                   item.className
                 )}
               >
-                {t(`links.${item.key}`)}
+                {t(`links.${item.key}`, getFallbackLabel(item.key))}
                 
                 {isActive && (
                   <motion.div
@@ -194,7 +212,7 @@ export const Navbar = () => {
                             : "text-[#1E293B] hover:bg-white/80 hover:text-[#2563EB] hover:shadow-sm"
                         )}
                       >
-                        {t(`links.${item.key}`)}
+                        {t(`links.${item.key}`, getFallbackLabel(item.key))}
                       </Link>
                     );
                   })}
