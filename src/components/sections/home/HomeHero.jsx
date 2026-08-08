@@ -94,7 +94,7 @@ export const HomeHero = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white/50 backdrop-blur-sm z-10 aspect-[4/5] sm:aspect-square lg:h-[600px] w-full"
+              className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white/50 backdrop-blur-sm z-10 h-[250px] sm:h-[350px] lg:h-[600px] w-full"
             >
               <AnimatePresence mode="wait">
                 <motion.div
