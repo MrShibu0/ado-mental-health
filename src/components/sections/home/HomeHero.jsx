@@ -59,7 +59,7 @@ export const HomeHero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl text-left"
+            className="max-w-2xl text-left order-2 lg:order-1"
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1E3A8A]/10 text-[#1E3A8A] font-semibold text-sm mb-6 border border-[#1E3A8A]/20">
               <span className="w-2.5 h-2.5 rounded-full bg-[#1E3A8A] animate-pulse" />
@@ -89,7 +89,7 @@ export const HomeHero = () => {
           </motion.div>
           
           {/* Right Column - Carousel Image Slider with Floating Cards */}
-          <div className="relative block w-full max-w-lg mx-auto lg:max-w-none mt-10 lg:mt-0 select-none">
+          <div className="relative block w-full max-w-lg mx-auto lg:max-w-none mb-10 lg:mb-0 order-1 lg:order-2 select-none">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
