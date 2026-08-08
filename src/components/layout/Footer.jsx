@@ -128,7 +128,7 @@ export const Footer = () => {
             ))}
           </div>
           <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-            {t("copyright", { year: new Date().getFullYear() })} | <a href="https://adnibog.com" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-400 hover:underline transition-colors font-medium">Powered by Adnibog Systems</a> | <Link to="/admin/login" className="text-slate-400 hover:text-white transition-colors">Admin Portal</Link>
+            {t("copyright", { year: new Date().getFullYear() })} | <a href="https://adnibog.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:underline transition-colors">Powered by Adnibog Systems</a> | <Link to="/admin/login" className="text-slate-400 hover:text-white transition-colors">Admin Portal</Link>
           </p>
         </div>
       </div>
