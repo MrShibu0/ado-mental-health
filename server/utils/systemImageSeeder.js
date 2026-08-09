@@ -189,18 +189,48 @@ export const seedSystemImages = async (superAdminId) => {
     const keys = Object.keys(SYSTEM_IMAGES_MAPPING);
     
     for (const key of keys) {
-      // 1. Check if the system image is already seeded
-      const existing = await Gallery.findOne({ systemKey: key });
-      if (existing) {
-        // Skip, preserving admin modifications
-        continue;
-      }
-
       const info = SYSTEM_IMAGES_MAPPING[key];
       const sourcePath = path.join(process.cwd(), "src", "Images", info.source);
 
       if (!fs.existsSync(sourcePath)) {
         console.warn(`⚠️ Source file not found: ${sourcePath}. Skipping.`);
+        continue;
+      }
+
+      // 1. Check if the system image is already seeded
+      const existing = await Gallery.findOne({ systemKey: key });
+      if (existing) {
+        // Verify physical files exist on this server's local filesystem
+        const originalFilePath = path.join(process.cwd(), "server", existing.imageUrl);
+        const thumbnailFilePath = path.join(process.cwd(), "server", existing.thumbnailUrl);
+
+        if (fs.existsSync(originalFilePath) && fs.existsSync(thumbnailFilePath)) {
+          // Files exist, safe to skip
+          continue;
+        }
+
+        console.log(`🔧 Physical files missing on disk for ${key}. Re-generating assets...`);
+        try {
+          const fileBuffer = fs.readFileSync(sourcePath);
+          const processed = await processImage(fileBuffer, info.source, "gallery");
+
+          const mediaObj = await Media.findById(existing.mediaRef);
+          if (mediaObj) {
+            mediaObj.filename = processed.filename;
+            mediaObj.url = processed.imageUrl;
+            mediaObj.thumbnailUrl = processed.thumbnailUrl;
+            mediaObj.size = processed.size;
+            await mediaObj.save();
+          }
+
+          existing.imageUrl = processed.imageUrl;
+          existing.thumbnailUrl = processed.thumbnailUrl;
+          await existing.save();
+
+          console.log(`✅ Restored missing physical assets for system image: ${key}`);
+        } catch (err) {
+          console.error(`❌ Failed to restore assets for ${key}:`, err);
+        }
         continue;
       }
 
