@@ -29,7 +29,7 @@ export const PartnersGrid = () => {
   }, []);
 
   const displayList = dbPartners.length > 0
-    ? dbPartners.map((p) => ({ id: p._id, name: p.name, website: p.website }))
+    ? dbPartners.map((p) => ({ id: p._id, name: p.name, logo: p.logo, website: p.website }))
     : staticPartners;
 
   return (
@@ -51,14 +51,22 @@ export const PartnersGrid = () => {
             {displayList.map((partner) => (
               <div 
                 key={partner.id} 
-                className="flex flex-col items-center justify-center p-8 bg-slate-50 border border-slate-200/40 rounded-2xl hover:bg-slate-100 hover:scale-[1.02] hover:shadow-md transition-all duration-300 h-32 cursor-pointer"
+                className="flex flex-col items-center justify-center p-6 bg-slate-50 border border-slate-200/40 rounded-2xl hover:bg-slate-100 hover:scale-[1.02] hover:shadow-md transition-all duration-300 h-32 cursor-pointer group"
                 onClick={() => {
                   if (partner.website) {
                     window.open(partner.website, "_blank", "noopener,noreferrer");
                   }
                 }}
               >
-                <span className="font-extrabold text-slate-800 text-center leading-tight tracking-wide">{partner.name}</span>
+                {partner.logo ? (
+                  <img 
+                    src={partner.logo} 
+                    alt={partner.name} 
+                    className="max-h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+                  />
+                ) : (
+                  <span className="font-extrabold text-slate-800 text-center leading-tight tracking-wide">{partner.name}</span>
+                )}
               </div>
             ))}
           </div>
