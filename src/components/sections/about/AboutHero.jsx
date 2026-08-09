@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../ui/Button";
 import heroImage from "../../../Images/Mental Health Counseling Scene.png";
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
 
 export const AboutHero = () => {
   const { t } = useTranslation("about");
+  const { getSystemImage } = useImageCMS();
+  
+  const dynamicImage = getSystemImage("about", "hero", heroImage);
   
   return (
     <div className="relative isolate overflow-hidden bg-white pt-32 pb-20 sm:pt-[140px] sm:pb-24 min-h-[65vh] lg:min-h-[75vh] flex items-center">
@@ -56,7 +60,7 @@ export const AboutHero = () => {
           >
             <div className="relative w-full rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(15,23,42,0.1)] border border-white/50">
               <img
-                src={heroImage}
+                src={dynamicImage}
                 alt="Mental Health Counseling Session"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
                 loading="lazy"

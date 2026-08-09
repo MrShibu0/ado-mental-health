@@ -4,11 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import './i18n/i18n'
 import { Loader } from './components/ui/Loader'
+import { ImageCMSProvider } from './context/ImageCMSContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
-      <App />
+      <ImageCMSProvider>
+        <App />
+      </ImageCMSProvider>
     </Suspense>
   </StrictMode>,
 )

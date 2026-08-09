@@ -65,10 +65,6 @@ export default function AdminDashboard() {
       title: "Content",
       group: "content",
       children: [
-        { title: "Home CMS", icon: FileText, path: "/admin/settings#home" },
-        { title: "About", icon: FileText, path: "/admin/settings#about" },
-        { title: "Services", icon: FileText, path: "/admin/settings#services" },
-        { title: "Community Programs", icon: FileText, path: "/admin/settings#programs" },
         { title: "News & Events", icon: FileText, path: "/admin/news" },
         { title: "Gallery", icon: Image, path: "/admin/gallery" },
         { title: "Partners & Donors", icon: Users, path: "/admin/partners" }
@@ -79,15 +75,7 @@ export default function AdminDashboard() {
       group: "operations",
       children: [
         { title: "Donations", icon: Gift, path: "/admin/donations" },
-        { title: "Contact Messages", icon: Mail, path: "/admin/messages" },
-        { title: "Team Management", icon: Users, path: "/admin/settings#team" }
-      ]
-    },
-    {
-      title: "Media",
-      group: "media",
-      children: [
-        { title: "Media Library", icon: FolderOpen, path: "/admin/settings#media" }
+        { title: "Contact Messages", icon: Mail, path: "/admin/messages" }
       ]
     },
     {
@@ -95,7 +83,6 @@ export default function AdminDashboard() {
       group: "analytics",
       children: [
         { title: "Dashboard Stats", icon: BarChart3, path: "/admin/dashboard" },
-        { title: "Visitor Analytics", icon: BarChart3, path: "/admin/settings#visitor-analytics" },
         { title: "Activity Logs", icon: ShieldAlert, path: "/admin/logs" }
       ]
     },
@@ -103,10 +90,7 @@ export default function AdminDashboard() {
       title: "Administration",
       group: "administration",
       children: [
-        { title: "Profile", icon: User, path: "/admin/profile" },
-        { title: "Settings", icon: Settings, path: "/admin/settings" },
-        { title: "Admin Users", icon: Users, path: "/admin/settings#users" },
-        { title: "Backup & Restore", icon: Database, path: "/admin/settings#backup" }
+        { title: "Profile", icon: User, path: "/admin/profile" }
       ]
     }
   ];

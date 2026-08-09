@@ -9,11 +9,21 @@ import outreach3 from "../../../Images/Group Therapy.png";
 import outreach4 from "../../../Images/Training & Capacity Building.png";
 import outreach5 from "../../../Images/Community Outreach Program.png";
 
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
+
 const keys = ["schools", "families", "counseling", "workshops", "youth"];
-const images = [outreach1, outreach2, outreach3, outreach4, outreach5];
 
 export const CommunityOutreach = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+
+  const dynamicImages = [
+    getSystemImage("home", "outreach-slide-1", outreach1),
+    getSystemImage("home", "outreach-slide-2", outreach2),
+    getSystemImage("home", "outreach-slide-3", outreach3),
+    getSystemImage("home", "outreach-slide-4", outreach4),
+    getSystemImage("home", "outreach-slide-5", outreach5)
+  ];
   
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -36,7 +46,7 @@ export const CommunityOutreach = () => {
                 }`}
               >
                 <img 
-                  src={images[idx]} 
+                  src={dynamicImages[idx]} 
                   alt={t(`outreach.items.${key}`)} 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   loading="lazy"

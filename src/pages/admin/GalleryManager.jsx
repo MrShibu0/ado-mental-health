@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { 
   Plus, Search, Filter, Trash2, Undo2, Star, 
-  Eye, Calendar, MapPin, Loader2, RefreshCw, AlertCircle
+  Eye, Calendar, MapPin, Loader2, RefreshCw, AlertCircle, RefreshCw as ReplaceIcon, Check, Image
 } from "lucide-react";
 import toast from "react-hot-toast";
 
@@ -9,7 +9,8 @@ const CATEGORIES = [
   "Community Programs", "Counseling", "Family Therapy", 
   "School Programs", "Training", "Workshops", 
   "Community Outreach", "Events", "Team", 
-  "Awareness Campaigns", "Other"
+  "Awareness Campaigns", "Other",
+  "System Banner", "System Logo", "System Hero", "System Section", "System Partner", "System News", "System Resource"
 ];
 
 export default function GalleryManager() {
@@ -21,6 +22,8 @@ export default function GalleryManager() {
   // Filters & Search
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
+  const [usageTypeFilter, setUsageTypeFilter] = useState("All"); // "All", "System", "Gallery"
+  const [isUsedFilter, setIsUsedFilter] = useState("All"); // "All", "Used", "Unused"
   const [sort, setSort] = useState("newest");
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -30,6 +33,11 @@ export default function GalleryManager() {
   const [showEditModal, setShowEditModal] = useState(false);
   const [editItem, setEditItem] = useState(null);
   
+  // Preview modal & references
+  const [previewItem, setPreviewItem] = useState(null);
+  const [references, setReferences] = useState([]);
+  const [loadingRefs, setLoadingRefs] = useState(false);
+
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -38,7 +46,9 @@ export default function GalleryManager() {
     eventDate: new Date().toISOString().split("T")[0],
     altText: "",
     featured: false,
-    file: null
+    file: null,
+    tags: "",
+    coordinates: ""
   });
 
   // Bulk action states
@@ -54,13 +64,19 @@ export default function GalleryManager() {
           setRecycleBin(data.items);
         }
       } else {
-        const queryParams = new URLSearchParams({
+        const params = {
           page,
           limit: 12,
           category,
           search,
           sort
-        });
+        };
+        if (isUsedFilter === "Used") params.isUsed = "true";
+        if (isUsedFilter === "Unused") params.isUsed = "false";
+        if (usageTypeFilter === "System") params.usageType = "system";
+        if (usageTypeFilter === "Gallery") params.usageType = "gallery";
+
+        const queryParams = new URLSearchParams(params);
         const res = await fetch(`/api/gallery?${queryParams}`);
         if (res.ok) {
           const data = await res.json();
@@ -79,7 +95,7 @@ export default function GalleryManager() {
   useEffect(() => {
     fetchItems();
     setSelectedIds([]); // clear selection
-  }, [showRecycle, page, category, sort]);
+  }, [showRecycle, page, category, sort, isUsedFilter, usageTypeFilter]);
 
   // Debounced search
   useEffect(() => {
@@ -201,6 +217,55 @@ export default function GalleryManager() {
     }
   };
 
+  const handlePreviewClick = async (item) => {
+    setPreviewItem(item);
+    setReferences([]);
+    setLoadingRefs(true);
+    try {
+      const res = await fetch(`/api/gallery/${item._id}/references`);
+      if (res.ok) {
+        const data = await res.json();
+        setReferences(data.references || []);
+      } else {
+        toast.error("Failed to load image usage locations.");
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error("An error occurred loading usage references.");
+    } finally {
+      setLoadingRefs(false);
+    }
+  };
+
+  const handleReplaceFile = async (id, file) => {
+    if (!file) return;
+    if (file.size > 10 * 1024 * 1024) {
+      return toast.error("File is too large. Max size is 10MB.");
+    }
+
+    const payload = new FormData();
+    payload.append("file", file);
+
+    const replaceToast = toast.loading("Replacing image files on server...");
+    try {
+      const res = await fetch(`/api/gallery/${id}/replace`, {
+        method: "PUT",
+        body: payload
+      });
+      const data = await res.json();
+      if (res.ok) {
+        toast.success(data.message, { id: replaceToast });
+        setPreviewItem(null); // Close preview
+        fetchItems();
+      } else {
+        toast.error(data.error || "Failed to replace image.", { id: replaceToast });
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error("An error occurred during replacement.", { id: replaceToast });
+    }
+  };
+
   const handleDelete = async (id, permanent = false) => {
     const confirmMsg = permanent 
       ? "Are you sure you want to permanently delete this image? This will delete the database entry and the files on disk!" 
@@ -215,7 +280,12 @@ export default function GalleryManager() {
         toast.success(data.message);
         fetchItems();
       } else {
-        toast.error(data.error);
+        if (data.error === "IMAGE_IN_USE") {
+          const refList = (data.references || []).map(r => `• ${r.page} → ${r.section} (${r.type})`).join("\n");
+          alert(`This image cannot be permanently deleted because it is currently used on the website in:\n\n${refList}\n\nPlease replace or remove the image reference in these locations first.`);
+        } else {
+          toast.error(data.error || "Failed to delete item.");
+        }
       }
     } catch (err) {
       console.error(err);
@@ -291,7 +361,15 @@ export default function GalleryManager() {
         fetchItems();
         setSelectedIds([]);
       } else {
-        toast.error(data.error);
+        if (data.error === "IMAGE_IN_USE" && data.details) {
+          const detailList = data.details.map(item => {
+            const refList = item.references.map(r => `  - ${r.page} → ${r.section} (${r.type})`).join("\n");
+            return `• ${item.title}:\n${refList}`;
+          }).join("\n\n");
+          alert(`Some selected images cannot be permanently deleted because they are used on the website:\n\n${detailList}\n\nPlease replace them first.`);
+        } else {
+          toast.error(data.error || "Bulk action failed.");
+        }
       }
     } catch (err) {
       console.error(err);
@@ -351,7 +429,7 @@ export default function GalleryManager() {
 
       {/* Filters (Active Gallery Mode Only) */}
       {!showRecycle && (
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 bg-slate-900/40 p-4 border border-slate-800/80 rounded-[20px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 bg-slate-900/40 p-4 border border-slate-800/80 rounded-[20px]">
           {/* Search bar */}
           <div className="relative">
             <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-500">
@@ -381,6 +459,38 @@ export default function GalleryManager() {
             </select>
           </div>
 
+          {/* Usage Type Dropdown */}
+          <div className="relative">
+            <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-500">
+              <Filter className="w-4 h-4" />
+            </span>
+            <select
+              value={usageTypeFilter}
+              onChange={(e) => { setUsageTypeFilter(e.target.value); setPage(1); }}
+              className="w-full bg-slate-900 border border-slate-800 rounded-xl py-2 pl-9 pr-4 text-xs text-slate-300 focus:outline-none focus:border-blue-500 cursor-pointer"
+            >
+              <option value="All">All Usage Types</option>
+              <option value="gallery">Gallery Images</option>
+              <option value="system">System Images</option>
+            </select>
+          </div>
+
+          {/* Is Used Dropdown */}
+          <div className="relative">
+            <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-500">
+              <Filter className="w-4 h-4" />
+            </span>
+            <select
+              value={isUsedFilter}
+              onChange={(e) => { setIsUsedFilter(e.target.value); setPage(1); }}
+              className="w-full bg-slate-900 border border-slate-800 rounded-xl py-2 pl-9 pr-4 text-xs text-slate-300 focus:outline-none focus:border-blue-500 cursor-pointer"
+            >
+              <option value="All">Used & Unused</option>
+              <option value="Used">Used on Site</option>
+              <option value="Unused">Unused on Site</option>
+            </select>
+          </div>
+
           {/* Sort Dropdown */}
           <div className="relative">
             <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-500">
@@ -399,7 +509,14 @@ export default function GalleryManager() {
 
           {/* Reset Filters */}
           <button
-            onClick={() => { setSearch(""); setCategory("All"); setSort("newest"); setPage(1); }}
+            onClick={() => {
+              setSearch("");
+              setCategory("All");
+              setUsageTypeFilter("All");
+              setIsUsedFilter("All");
+              setSort("newest");
+              setPage(1);
+            }}
             className="flex items-center justify-center gap-2 bg-slate-850 hover:bg-slate-800 text-xs font-semibold text-slate-300 py-2 rounded-xl transition-colors border border-slate-800"
           >
             <RefreshCw className="w-3.5 h-3.5" /> Reset Filters
@@ -463,7 +580,11 @@ export default function GalleryManager() {
                 }`}
               >
                 {/* Image Wrap */}
-                <div className="relative aspect-[4/3] bg-slate-800 overflow-hidden">
+                <div 
+                  onClick={() => handlePreviewClick(item)}
+                  title="Click to preview details & usage"
+                  className="relative aspect-[4/3] bg-slate-800 overflow-hidden cursor-pointer"
+                >
                   <img 
                     src={item.thumbnailUrl} 
                     alt={item.title} 
@@ -675,6 +796,31 @@ export default function GalleryManager() {
                 </div>
               </div>
 
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Tags (comma-separated)</label>
+                  <input
+                    type="text"
+                    name="tags"
+                    value={formData.tags}
+                    onChange={handleInputChange}
+                    placeholder="e.g. clinic, staff, community"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-white placeholder-slate-650 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Coordinates</label>
+                  <input
+                    type="text"
+                    name="coordinates"
+                    value={formData.coordinates}
+                    onChange={handleInputChange}
+                    placeholder="e.g. 18.8310, -72.8719"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-white placeholder-slate-650 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+
               <div>
                 <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Select Image File</label>
                 <input
@@ -800,6 +946,31 @@ export default function GalleryManager() {
                 </div>
               </div>
 
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Tags (comma-separated)</label>
+                  <input
+                    type="text"
+                    name="tags"
+                    value={formData.tags}
+                    onChange={handleInputChange}
+                    placeholder="e.g. clinic, staff, community"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-white placeholder-slate-650 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-400 uppercase mb-2">Coordinates</label>
+                  <input
+                    type="text"
+                    name="coordinates"
+                    value={formData.coordinates}
+                    onChange={handleInputChange}
+                    placeholder="e.g. 18.8310, -72.8719"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-white placeholder-slate-650 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+
               <div className="flex items-center gap-3 pt-2">
                 <input
                   type="checkbox"
@@ -829,6 +1000,129 @@ export default function GalleryManager() {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      )}
+      {/* Detailed Image Preview & References Modal */}
+      {previewItem && (
+        <div className="fixed inset-0 z-[60] bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-slate-900 border border-slate-800 w-full max-w-3xl rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto custom-scrollbar flex flex-col md:flex-row gap-6">
+            {/* Image Preview Side */}
+            <div className="md:w-1/2 flex flex-col justify-center bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden p-2 relative">
+              <img
+                src={previewItem.imageUrl}
+                alt={previewItem.title}
+                className="w-full h-auto max-h-[50vh] md:max-h-[60vh] object-contain rounded-xl"
+              />
+              <div className="mt-4 flex gap-2">
+                <label className="flex-grow py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors shadow-lg shadow-blue-600/10">
+                  <ReplaceIcon className="w-3.5 h-3.5" />
+                  Replace Image File
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) => handleReplaceFile(previewItem._id, e.target.files[0])}
+                    className="hidden"
+                  />
+                </label>
+              </div>
+            </div>
+
+            {/* Info Side */}
+            <div className="md:w-1/2 flex flex-col justify-between text-left space-y-4">
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">{previewItem.title}</h3>
+                {previewItem.description && (
+                  <p className="text-xs text-slate-400 leading-relaxed mb-4">{previewItem.description}</p>
+                )}
+                
+                {/* Metadata Details */}
+                <div className="space-y-2.5 text-xs border-t border-slate-800/60 pt-4">
+                  <div className="flex justify-between"><span className="text-slate-500">Category:</span> <span className="text-slate-300 font-semibold">{previewItem.category}</span></div>
+                  <div className="flex justify-between"><span className="text-slate-500">Usage Type:</span> <span className="text-slate-300 capitalize">{previewItem.usageType || "gallery"}</span></div>
+                  {previewItem.location && <div className="flex justify-between"><span className="text-slate-500">Location:</span> <span className="text-slate-300">{previewItem.location}</span></div>}
+                  {previewItem.coordinates && <div className="flex justify-between"><span className="text-slate-500">Coordinates:</span> <span className="text-slate-300">{previewItem.coordinates}</span></div>}
+                  {previewItem.mediaRef && (
+                    <>
+                      <div className="flex justify-between"><span className="text-slate-500">File Name:</span> <span className="text-slate-300 truncate max-w-[180px] font-mono">{previewItem.mediaRef.filename}</span></div>
+                      <div className="flex justify-between"><span className="text-slate-500">File Size:</span> <span className="text-slate-300">{(previewItem.mediaRef.size / 1024).toFixed(1)} KB</span></div>
+                    </>
+                  )}
+                  <div className="flex justify-between"><span className="text-slate-500">Created:</span> <span className="text-slate-300">{new Date(previewItem.createdAt).toLocaleString()}</span></div>
+                  {previewItem.altText && <div className="flex justify-between"><span className="text-slate-500">Alt Text:</span> <span className="text-slate-300 italic">"{previewItem.altText}"</span></div>}
+                </div>
+
+                {/* Tags */}
+                {previewItem.tags && previewItem.tags.length > 0 && (
+                  <div className="mt-4 pt-4 border-t border-slate-800/60">
+                    <span className="text-xs text-slate-500 block mb-2">Tags:</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {previewItem.tags.map(t => (
+                        <span key={t} className="px-2 py-0.5 bg-slate-800 text-slate-300 rounded text-[10px] font-medium">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Usage Locations */}
+                <div className="mt-4 pt-4 border-t border-slate-800/60">
+                  <span className="text-xs font-bold text-slate-400 block mb-2">Active Website References:</span>
+                  {loadingRefs ? (
+                    <div className="flex items-center gap-1.5 text-xs text-slate-500">
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                      Scanning references...
+                    </div>
+                  ) : references.length === 0 ? (
+                    <p className="text-xs text-teal-400 font-medium">✓ Safe to delete. Not currently used anywhere on the website.</p>
+                  ) : (
+                    <ul className="space-y-1.5">
+                      {references.map((r, rIdx) => (
+                        <li key={rIdx} className="text-xs text-slate-300 flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                          <span className="font-semibold text-slate-450 capitalize">{r.page}</span> 
+                          <span className="text-slate-650">→</span> 
+                          <span>{r.name}</span>
+                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-950 text-slate-550 capitalize">{r.type}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+
+              {/* Action Bar */}
+              <div className="flex gap-3 pt-6 border-t border-slate-800/60">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPreviewItem(null);
+                    handleEditClick(previewItem);
+                  }}
+                  className="flex-1 py-2.5 bg-slate-800 hover:bg-slate-750 text-slate-300 font-bold rounded-xl text-xs transition-colors"
+                >
+                  Edit Details
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (window.confirm("Move this image to the Recycle Bin?")) {
+                      handleDelete(previewItem._id, false);
+                      setPreviewItem(null);
+                    }
+                  }}
+                  className="px-3 py-2.5 bg-red-950/20 border border-red-900/30 text-red-400 hover:bg-red-900/20 rounded-xl text-xs transition-colors"
+                >
+                  Delete
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setPreviewItem(null)}
+                  className="flex-1 py-2.5 bg-slate-850 hover:bg-slate-800 text-slate-450 hover:text-white font-bold rounded-xl text-xs transition-colors border border-slate-800"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       )}

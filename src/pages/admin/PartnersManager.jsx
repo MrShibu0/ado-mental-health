@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import { 
-  Plus, Search, Edit2, Trash2, Globe, Star, Loader2, AlertCircle 
+  Plus, Search, Edit2, Trash2, Globe, Star, Loader2, AlertCircle, Image 
 } from "lucide-react";
 import toast from "react-hot-toast";
+import { GallerySelector } from "../../components/admin/GallerySelector.jsx";
 
 export default function PartnersManager() {
   const [partners, setPartners] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [editingPartner, setEditingPartner] = useState(null);
+  const [showMediaSelector, setShowMediaSelector] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -267,16 +269,45 @@ export default function PartnersManager() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Logo Path / URL</label>
-                <input
-                  type="text"
-                  name="logo"
-                  value={formData.logo}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="e.g. /uploads/media/2026/July/logo.webp"
-                  className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-white focus:outline-none"
-                />
+                <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Partner Logo</label>
+                <div className="flex gap-4 items-center bg-slate-950 border border-slate-800 rounded-2xl p-4">
+                  {formData.logo ? (
+                    <img src={formData.logo} alt="Logo Preview" className="w-16 h-16 object-contain rounded-lg bg-slate-900 border border-slate-800 shrink-0" />
+                  ) : (
+                    <div className="w-16 h-16 bg-slate-900 border border-slate-800 rounded-lg flex items-center justify-center shrink-0 text-slate-500">
+                      <Image className="w-5 h-5" />
+                    </div>
+                  )}
+                  <div className="flex-grow space-y-2">
+                    <input
+                      type="text"
+                      name="logo"
+                      value={formData.logo}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="e.g. /uploads/media/logo.webp"
+                      className="w-full bg-slate-900 border border-slate-800 rounded-xl py-2 px-3 text-xs text-white focus:outline-none focus:border-blue-500"
+                    />
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setShowMediaSelector(true)}
+                        className="px-3 py-1.5 bg-slate-800 hover:bg-slate-750 text-white rounded-lg text-xs font-semibold transition-colors"
+                      >
+                        Choose Logo
+                      </button>
+                      {formData.logo && (
+                        <button
+                          type="button"
+                          onClick={() => setFormData(prev => ({ ...prev, logo: "" }))}
+                          className="px-3 py-1.5 bg-red-950/20 border border-red-900/30 text-red-400 hover:bg-red-900/20 rounded-lg text-xs font-semibold transition-colors"
+                        >
+                          Clear
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div>
@@ -353,6 +384,13 @@ export default function PartnersManager() {
         </div>
       )}
 
+      {showMediaSelector && (
+        <GallerySelector
+          currentUrl={formData.logo}
+          onSelect={(url) => setFormData(prev => ({ ...prev, logo: url }))}
+          onClose={() => setShowMediaSelector(false)}
+        />
+      )}
     </div>
   );
 }

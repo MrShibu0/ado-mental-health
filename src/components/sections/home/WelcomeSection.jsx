@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../ui/Button";
 import welcomeImage from "../../../Images/Community Resilience & Well-being.png";
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
 
 export const WelcomeSection = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+  
+  const dynamicImage = getSystemImage("home", "welcome", welcomeImage);
   
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -48,7 +52,7 @@ export const WelcomeSection = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
               <img 
-                src={welcomeImage} 
+                src={dynamicImage} 
                 alt="Community Resilience" 
                 className="w-full h-[400px] lg:h-[500px] object-cover"
                 loading="lazy"

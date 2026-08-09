@@ -10,7 +10,8 @@ const gallerySchema = new mongoose.Schema({
       "Community Programs", "Counseling", "Family Therapy", 
       "School Programs", "Training", "Workshops", 
       "Community Outreach", "Events", "Team", 
-      "Awareness Campaigns", "Other"
+      "Awareness Campaigns", "Other",
+      "System Banner", "System Logo", "System Hero", "System Section", "System Partner", "System News", "System Resource"
     ]
   },
   mediaRef: { type: mongoose.Schema.Types.ObjectId, ref: "Media", required: true },
@@ -23,7 +24,18 @@ const gallerySchema = new mongoose.Schema({
   views: { type: Number, default: 0 },
   deleted: { type: Boolean, default: false },
   deletedAt: { type: Date },
-  uploadedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" }
+  uploadedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Admin" },
+  
+  // Extended fields for website image management
+  tags: [{ type: String }],
+  coordinates: { type: String },
+  usageType: { type: String, enum: ["gallery", "system"], default: "gallery" },
+  usedOn: [{
+    page: { type: String },
+    section: { type: String },
+    refId: { type: String }
+  }],
+  systemKey: { type: String, unique: true, sparse: true }
 }, { timestamps: true });
 
 export default mongoose.model("Gallery", gallerySchema);

@@ -3,16 +3,20 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Button } from "../../ui/Button";
 import ctaImage from "../../../Images/Community Resilience & Well-being.png";
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
 
 export const FinalCTA = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+  
+  const dynamicImage = getSystemImage("home", "cta", ctaImage);
   
   return (
     <section className="py-24 md:py-32 bg-[#1E3A8A] relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src={ctaImage} 
+          src={dynamicImage} 
           alt="Community Together" 
           className="w-full h-full object-cover"
         />

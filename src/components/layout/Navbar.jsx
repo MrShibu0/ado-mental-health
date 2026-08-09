@@ -3,9 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../utils/cn";
-import logoImg from "../../Images/logo.png";
+import logoImgStatic from "../../Images/logo.png";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher";
+import { useImageCMS } from "../../context/ImageCMSContext.jsx";
 
 const navigationLinks = [
   { key: "home", href: "/" },
@@ -42,9 +43,12 @@ const getFallbackLabel = (key) => {
 
 export const Navbar = () => {
   const { t } = useTranslation("navigation");
+  const { getSystemImage } = useImageCMS();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  const logoImg = getSystemImage("common", "logo", logoImgStatic);
 
   // Handle scroll effect
   useEffect(() => {

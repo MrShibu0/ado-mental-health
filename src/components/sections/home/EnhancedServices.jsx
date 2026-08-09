@@ -29,10 +29,22 @@ const serviceImages = {
   community: imgCommunity
 };
 
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
+
 const serviceKeys = ["counseling", "group", "family", "crisis", "psychiatric", "community"];
 
 export const EnhancedServices = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+
+  const dynamicImages = {
+    counseling: getSystemImage("home", "service-counseling", imgCounseling),
+    group: getSystemImage("home", "service-group", imgGroup),
+    family: getSystemImage("home", "service-family", imgFamily),
+    crisis: getSystemImage("home", "service-crisis", imgCrisis),
+    psychiatric: getSystemImage("home", "service-psychiatric", imgPsychiatric),
+    community: getSystemImage("home", "service-community", imgCommunity)
+  };
   
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -59,7 +71,7 @@ export const EnhancedServices = () => {
                 {/* Image Section */}
                 <div className="relative h-48 sm:h-56 overflow-hidden bg-slate-100">
                   <img 
-                    src={serviceImages[key]} 
+                    src={dynamicImages[key]} 
                     alt={t(`services.items.${key}.title`)} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                     loading="lazy" 

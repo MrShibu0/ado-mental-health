@@ -6,6 +6,8 @@ import { Button } from "../../ui/Button";
 import { ShieldCheck, UserCheck, MapPin, Beaker } from "lucide-react";
 import { cn } from "../../../utils/cn";
 
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
+
 // Import Slide Images
 import imgGroupTherapy from "../../../Images/Group Therapy.png";
 import imgCounselingScene from "../../../Images/Mental Health Counseling Scene.png";
@@ -13,19 +15,20 @@ import imgCommunityResilience from "../../../Images/Community Resilience.png";
 
 export const HomeHero = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: imgGroupTherapy,
+      image: getSystemImage("home", "hero-slide-1", imgGroupTherapy),
       badge: "Group Therapy",
     },
     {
-      image: imgCounselingScene,
+      image: getSystemImage("home", "hero-slide-2", imgCounselingScene),
       badge: "Compassionate Counseling",
     },
     {
-      image: imgCommunityResilience,
+      image: getSystemImage("home", "hero-slide-3", imgCommunityResilience),
       badge: "Community Resilience",
     },
   ];

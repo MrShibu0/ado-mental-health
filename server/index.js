@@ -40,6 +40,7 @@ const seedAdmin = async () => {
   try {
     const Admin = (await import("./models/Admin.js")).default;
     const count = await Admin.countDocuments();
+    let superAdminId = null;
     if (count === 0) {
       const bcrypt = (await import("bcryptjs")).default;
       const username = process.env.ADMIN_USERNAME || "admin";
@@ -48,14 +49,22 @@ const seedAdmin = async () => {
       const salt = await bcrypt.genSalt(10);
       const hashedPassword = await bcrypt.hash(password, salt);
 
-      await Admin.create({
+      const adminObj = await Admin.create({
         username,
         password: hashedPassword,
         displayName: "Super Administrator",
         role: "super-admin"
       });
+      superAdminId = adminObj._id;
       console.log(`👤 Seeded first admin user: ${username} with role super-admin`);
+    } else {
+      const adminObj = await Admin.findOne({ role: "super-admin" });
+      if (adminObj) superAdminId = adminObj._id;
     }
+
+    // Seed system images
+    const { seedSystemImages } = await import("./utils/systemImageSeeder.js");
+    await seedSystemImages(superAdminId);
   } catch (err) {
     console.error("Error seeding default admin:", err);
   }

@@ -8,11 +8,19 @@ import story1 from "../../../Images/Family Therapy Service.png";
 import story2 from "../../../Images/Mental Health Counseling Scene.png";
 import story3 from "../../../Images/Community Outreach Program.png";
 
-const images = [story1, story2, story3];
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
+
 const items = [0, 1, 2];
 
 export const SuccessStories = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+
+  const dynamicImages = [
+    getSystemImage("home", "success-story-1", story1),
+    getSystemImage("home", "success-story-2", story2),
+    getSystemImage("home", "success-story-3", story3)
+  ];
   
   return (
     <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
@@ -31,7 +39,7 @@ export const SuccessStories = () => {
             >
               <div className="relative h-56 overflow-hidden">
                 <img 
-                  src={images[idx]} 
+                  src={dynamicImages[idx]} 
                   alt={t(`successStories.items.${idx}.title`)} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"

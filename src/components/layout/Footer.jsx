@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "../ui/Button";
-import logoImg from "../../Images/logo.png";
+import logoImgStatic from "../../Images/logo.png";
+import { useImageCMS } from "../../context/ImageCMSContext.jsx";
 
 import { useTranslation } from "react-i18next";
 
@@ -23,6 +24,8 @@ const navigation = {
 
 export const Footer = () => {
   const { t } = useTranslation("footer");
+  const { getSystemImage } = useImageCMS();
+  const logoImg = getSystemImage("common", "logo", logoImgStatic);
   return (
     <footer className="bg-primary text-white pt-16 pb-8">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

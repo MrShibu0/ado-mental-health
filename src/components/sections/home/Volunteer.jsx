@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import { Button } from "../../ui/Button";
 import { HeartHandshake } from "lucide-react";
 import volunteerImage from "../../../Images/Mental Health Counseling Scene.png";
+import { useImageCMS } from "../../../context/ImageCMSContext.jsx";
 
 export const Volunteer = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+  
+  const dynamicImage = getSystemImage("home", "volunteer", volunteerImage);
   
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -21,7 +25,7 @@ export const Volunteer = () => {
           {/* Image Column - Top on Mobile, Right on Desktop */}
           <div className="lg:col-span-6 w-full h-[220px] sm:h-[300px] lg:h-full relative overflow-hidden min-h-[220px] lg:min-h-0 order-1 lg:order-2 select-none">
             <img 
-              src={volunteerImage} 
+              src={dynamicImage} 
               alt="Volunteer" 
               className="w-full h-full object-cover"
               loading="lazy"

@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { 
   Plus, Search, Edit2, Trash2, Calendar, Eye, 
-  Settings, Loader2, Undo2, ArrowLeft, CheckCircle2, History
+  Settings, Loader2, Undo2, ArrowLeft, CheckCircle2, History, Image
 } from "lucide-react";
 import toast from "react-hot-toast";
+import { GallerySelector } from "../../components/admin/GallerySelector.jsx";
 
 export default function NewsManager() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showMediaSelector, setShowMediaSelector] = useState(false);
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -338,16 +340,44 @@ export default function NewsManager() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Cover Image Path / URL</label>
-                <input
-                  type="text"
-                  name="coverImage"
-                  value={formData.coverImage}
-                  onChange={handleInputChange}
-                  placeholder="e.g. /uploads/media/2026/July/photo.webp"
-                  className="w-full bg-slate-950 border border-slate-800 rounded-xl py-3 px-4 text-sm text-white focus:outline-none"
-                />
-                <p className="text-[10px] text-slate-500 mt-1 font-semibold">Copy path directly from your Media Library settings.</p>
+                <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Cover Image</label>
+                <div className="flex gap-4 items-center bg-slate-950 border border-slate-800 rounded-2xl p-4">
+                  {formData.coverImage ? (
+                    <img src={formData.coverImage} alt="Cover Preview" className="w-20 h-16 object-cover rounded-lg bg-slate-900 border border-slate-800 shrink-0" />
+                  ) : (
+                    <div className="w-20 h-16 bg-slate-900 border border-slate-800 rounded-lg flex items-center justify-center shrink-0 text-slate-500">
+                      <Image className="w-6 h-6" />
+                    </div>
+                  )}
+                  <div className="flex-grow space-y-2">
+                    <input
+                      type="text"
+                      name="coverImage"
+                      value={formData.coverImage}
+                      onChange={handleInputChange}
+                      placeholder="e.g. /uploads/media/... or select from gallery"
+                      className="w-full bg-slate-900 border border-slate-800 rounded-xl py-2 px-3 text-xs text-white focus:outline-none focus:border-blue-500"
+                    />
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={() => setShowMediaSelector(true)}
+                        className="px-3 py-1.5 bg-slate-800 hover:bg-slate-750 text-white rounded-lg text-xs font-semibold transition-colors"
+                      >
+                        Choose Image
+                      </button>
+                      {formData.coverImage && (
+                        <button
+                          type="button"
+                          onClick={() => setFormData(prev => ({ ...prev, coverImage: "" }))}
+                          className="px-3 py-1.5 bg-red-950/20 border border-red-900/30 text-red-400 hover:bg-red-900/20 rounded-lg text-xs font-semibold transition-colors"
+                        >
+                          Clear
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div>
@@ -613,6 +643,13 @@ export default function NewsManager() {
         </div>
       )}
 
+      {showMediaSelector && (
+        <GallerySelector
+          currentUrl={formData.coverImage}
+          onSelect={(url) => setFormData(prev => ({ ...prev, coverImage: url }))}
+          onClose={() => setShowMediaSelector(false)}
+        />
+      )}
     </div>
   );
 }
