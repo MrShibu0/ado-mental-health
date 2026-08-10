@@ -2,10 +2,13 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Button } from "../../ui/Button";
+import { useImageCMS } from "../../../context/ImageCMSContext";
 import ctaImage from "../../../Images/Community Resilience.png";
 
 export const AboutCTA = () => {
   const { t } = useTranslation("about");
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("about", "cta", ctaImage);
   
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -20,7 +23,7 @@ export const AboutCTA = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img 
-              src={ctaImage} 
+              src={dynamicImage} 
               alt="Community Resilience" 
               className="w-full h-full object-cover"
               loading="lazy"

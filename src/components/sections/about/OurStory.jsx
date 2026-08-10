@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { SectionTitle } from "../../ui/SectionTitle";
+import { useImageCMS } from "../../../context/ImageCMSContext";
 import storyImage from "../../../Images/Community Outreach Program.png";
 
 export const OurStory = () => {
   const { t } = useTranslation("about");
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("about", "story", storyImage);
   
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -19,7 +22,7 @@ export const OurStory = () => {
           >
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
               <img 
-                src={storyImage} 
+                src={dynamicImage} 
                 alt="Community Outreach in La Gonâve" 
                 className="w-full h-full object-cover"
                 loading="lazy"

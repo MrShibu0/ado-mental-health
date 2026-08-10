@@ -3,10 +3,13 @@ import { useTranslation } from "react-i18next";
 import { PageHeader } from "../components/layout/PageHeader";
 import { SectionTitle } from "../components/ui/SectionTitle";
 import { CTASection } from "../components/sections/CTASection";
+import { useImageCMS } from "../context/ImageCMSContext";
 import trainingImage from "../Images/Training & Capacity Building.png";
 
 const Training = () => {
   const { t } = useTranslation('training');
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("training", "hero", trainingImage);
   const trainings = t('trainings', { returnObjects: true }) || [];
 
   return (
@@ -46,7 +49,7 @@ const Training = () => {
               </div>
               <div className="sticky top-32 rounded-3xl overflow-hidden shadow-xl group">
                 <img 
-                  src={trainingImage} 
+                  src={dynamicImage} 
                   alt={t('imgAlt')} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"

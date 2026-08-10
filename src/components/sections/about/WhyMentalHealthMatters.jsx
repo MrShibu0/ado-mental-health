@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { HeartPulse } from "lucide-react";
+import { useImageCMS } from "../../../context/ImageCMSContext";
 import mattersImage from "../../../Images/Family Therapy Service.png";
 
 export const WhyMentalHealthMatters = () => {
   const { t } = useTranslation("about");
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("about", "matters", mattersImage);
   
   return (
     <section className="py-24 bg-[#1E3A8A] relative overflow-hidden">
@@ -48,7 +51,7 @@ export const WhyMentalHealthMatters = () => {
           >
             <div className="rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-4 border-white/10">
               <img 
-                src={mattersImage} 
+                src={dynamicImage} 
                 alt="Family Therapy and Wellbeing" 
                 className="w-full h-auto object-cover"
                 loading="lazy"

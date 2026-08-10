@@ -1094,16 +1094,30 @@ export default function GalleryManager() {
                   ) : references.length === 0 ? (
                     <p className="text-xs text-teal-400 font-medium">✓ Safe to delete. Not currently used anywhere on the website.</p>
                   ) : (
-                    <ul className="space-y-1.5">
-                      {references.map((r, rIdx) => (
-                        <li key={rIdx} className="text-xs text-slate-300 flex items-center gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                          <span className="font-semibold text-slate-450 capitalize">{r.page}</span> 
-                          <span className="text-slate-650">→</span> 
-                          <span>{r.name}</span>
-                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-950 text-slate-550 capitalize">{r.type}</span>
-                        </li>
-                      ))}
+                    <ul className="space-y-3">
+                      {references.map((r, rIdx) => {
+                        const displayPage = r.page.charAt(0).toUpperCase() + r.page.slice(1);
+                        const isSystem = r.type === "system";
+                        return (
+                          <li key={rIdx} className="text-xs text-slate-300">
+                            <div className="flex items-center gap-1.5 font-bold text-slate-200">
+                              <span className="text-teal-400 text-sm">✓</span>
+                              <span>{displayPage}</span>
+                            </div>
+                            {isSystem ? (
+                              <div className="text-slate-400 pl-4 mt-0.5 space-y-0.5 border-l border-slate-800/80 ml-1.5 pt-0.5">
+                                {r.refId && <div>→ {r.refId}</div>}
+                                {r.component && <div>→ {r.component} component</div>}
+                                {r.item && <div>→ {r.item}</div>}
+                              </div>
+                            ) : (
+                              <div className="text-slate-400 pl-4 mt-0.5 border-l border-slate-800/80 ml-1.5 pt-0.5">
+                                <div>→ {r.name}</div>
+                              </div>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
                   )}
                 </div>

@@ -2,15 +2,18 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "../ui/Button";
+import { useImageCMS } from "../../context/ImageCMSContext";
 import heroImage from "../../Images/Hero Section Image.png";
 
 export const Hero = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("common", "hero", heroImage);
   
   return (
     <div className="relative isolate overflow-hidden bg-white pt-32 pb-24 sm:pt-[140px] sm:pb-32 min-h-[90vh] flex items-center">
       <img
-        src={heroImage}
+        src={dynamicImage}
         alt="Mental Health Support Center in La Gonâve"
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-20"
         loading="lazy"

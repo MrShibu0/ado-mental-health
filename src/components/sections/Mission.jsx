@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { GlassCard } from "../ui/GlassCard";
 import { Heart, Shield, Users } from "lucide-react";
+import { useImageCMS } from "../../context/ImageCMSContext";
 import compassionateCareImg from "../../Images/Compassionate Care.png";
 import confidentialityImg from "../../Images/Confidentiality & Trust.png";
 import resilienceImg from "../../Images/Community Resilience.png";
 
 export const Mission = () => {
   const { t } = useTranslation("home");
+  const { getSystemImage } = useImageCMS();
+
   return (
     <div className="py-24 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -23,12 +26,16 @@ export const Mission = () => {
             {t("mission.description")}
           </p>
         </motion.div>
-
+ 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[0, 1, 2].map((index) => {
             const icons = [Heart, Shield, Users];
             const Icon = icons[index];
-            const images = [compassionateCareImg, confidentialityImg, resilienceImg];
+            const images = [
+              getSystemImage("about", "mission-care", compassionateCareImg),
+              getSystemImage("about", "mission-trust", confidentialityImg),
+              getSystemImage("about", "mission-resilience", resilienceImg)
+            ];
             const Image = images[index];
             return (
               <motion.div

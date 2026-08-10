@@ -4,6 +4,7 @@ import { PageHeader } from "../components/layout/PageHeader";
 import { CTASection } from "../components/sections/CTASection";
 import { Radio, GraduationCap, Users, HeartHandshake } from "lucide-react";
 import { GlassCard } from "../components/ui/GlassCard";
+import { useImageCMS } from "../context/ImageCMSContext";
 import outreachImage from "../Images/Community Outreach Program.png";
 import schoolImage from "../Images/School Mental Health Program.png";
 
@@ -14,31 +15,35 @@ const programs = [
   {
     icon: Users,
     titleKey: "programAwarenessTitle",
-    descKey: "programAwarenessDesc",
-    image: outreachImage
+    descKey: "programAwarenessDesc"
   },
   {
     icon: GraduationCap,
     titleKey: "programSchoolTitle",
-    descKey: "programSchoolDesc",
-    image: schoolImage
+    descKey: "programSchoolDesc"
   },
   {
     icon: Radio,
     titleKey: "programRadioTitle",
-    descKey: "programRadioDesc",
-    image: radioImage
+    descKey: "programRadioDesc"
   },
   {
     icon: HeartHandshake,
     titleKey: "programSupportTitle",
-    descKey: "programSupportDesc",
-    image: supportImage
+    descKey: "programSupportDesc"
   }
 ];
 
 const CommunityPrograms = () => {
   const { t } = useTranslation('community');
+  const { getSystemImage } = useImageCMS();
+
+  const dynamicOutreach = getSystemImage("programs", "outreach", outreachImage);
+  const dynamicSchool = getSystemImage("programs", "school", schoolImage);
+  const dynamicRadio = getSystemImage("programs", "radio", radioImage);
+  const dynamicSupport = getSystemImage("programs", "support", supportImage);
+
+  const dynamicImages = [dynamicOutreach, dynamicSchool, dynamicRadio, dynamicSupport];
 
   return (
     <>
@@ -57,7 +62,7 @@ const CommunityPrograms = () => {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mb-16 rounded-3xl overflow-hidden shadow-xl h-64 md:h-96 relative group">
               <img 
-                src={outreachImage} 
+                src={dynamicOutreach} 
                 alt="Community Outreach Program" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
@@ -70,12 +75,13 @@ const CommunityPrograms = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {programs.map((program, index) => {
                 const Icon = program.icon;
+                const currentImg = dynamicImages[index];
                 return (
                   <GlassCard key={index} className="bg-white hover:border-teal/30 transition-colors group/card overflow-hidden flex flex-col p-0">
-                    {program.image && (
+                    {currentImg && (
                       <div className="h-48 overflow-hidden relative">
                         <img 
-                          src={program.image} 
+                          src={currentImg} 
                           alt={t(program.titleKey)} 
                           className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-105"
                           loading="lazy"

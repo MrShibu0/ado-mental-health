@@ -2,10 +2,25 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import * as Icons from "lucide-react";
 import { cn } from "../../utils/cn";
+import { useImageCMS } from "../../context/ImageCMSContext";
+
+const serviceKeys = {
+  "individual-therapy": "counseling",
+  "psychiatric-consultations": "psychiatric",
+  "family-therapy": "family",
+  "psychological-assessments": "assessment",
+  "group-therapy": "group",
+  "crisis-intervention": "crisis",
+  "substance-use-support": "substance",
+  "older-adult-care": "older-adult"
+};
 
 export const ServiceCard = ({ service, index }) => {
   const { t } = useTranslation("services");
+  const { getSystemImage } = useImageCMS();
   const Icon = Icons[service.icon] || Icons.HeartPulse;
+  const sectionKey = serviceKeys[service.id] || "counseling";
+  const dynamicImage = getSystemImage("services", sectionKey, service.image);
   
   return (
     <motion.div
@@ -20,7 +35,7 @@ export const ServiceCard = ({ service, index }) => {
     >
       {service.image && (
         <div className="w-full h-48 overflow-hidden relative">
-          <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <img src={dynamicImage} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
         </div>
       )}
       <div className="p-8 flex flex-col flex-grow">

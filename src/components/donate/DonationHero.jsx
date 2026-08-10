@@ -1,14 +1,18 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ShieldCheck } from "lucide-react";
+import { useImageCMS } from "../../context/ImageCMSContext";
 import bgImage from "../../Images/Contact Page Banner.png";
 
 export const DonationHero = () => {
   const { t } = useTranslation("donate");
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("donate", "hero", bgImage);
+
   return (
     <div className="relative isolate overflow-hidden bg-primary pt-24 pb-16 sm:pt-32 sm:pb-24">
       <img
-        src={bgImage}
+        src={dynamicImage}
         alt="Donate to support mental health"
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-20"
         loading="lazy"

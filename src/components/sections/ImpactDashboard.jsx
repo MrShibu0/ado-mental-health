@@ -1,14 +1,18 @@
 import { impactStats } from "../../data/impact";
 import { AnimatedCounter } from "../ui/AnimatedCounter";
 import { SectionTitle } from "../ui/SectionTitle";
+import { useImageCMS } from "../../context/ImageCMSContext";
 import bgImage from "../../Images/Impact Dashboard Background.png";
 import { useTranslation } from "react-i18next";
 
 export const ImpactDashboard = () => {
   const { t } = useTranslation("common");
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("impact", "dashboard", bgImage);
+
   return (
     <div className="py-24 bg-primary text-white relative overflow-hidden">
-      <img src={bgImage} alt="Impact Background" className="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" />
+      <img src={dynamicImage} alt="Impact Background" className="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <SectionTitle 
           title={t('impact.title')} 

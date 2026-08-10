@@ -33,7 +33,10 @@ const gallerySchema = new mongoose.Schema({
   usedOn: [{
     page: { type: String },
     section: { type: String },
-    refId: { type: String }
+    component: { type: String },
+    item: { type: String },
+    refId: { type: String },
+    type: { type: String }
   }],
   systemKey: { type: String, unique: true, sparse: true }
 }, { timestamps: true });

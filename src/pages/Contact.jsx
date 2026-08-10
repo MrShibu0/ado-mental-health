@@ -5,11 +5,15 @@ import { SectionTitle } from "../components/ui/SectionTitle";
 import { Button } from "../components/ui/Button";
 import { GlassCard } from "../components/ui/GlassCard";
 import { MapPin, Phone, Mail, Clock, AlertTriangle } from "lucide-react";
+import { useImageCMS } from "../context/ImageCMSContext";
 import contactImage from "../Images/Contact Page Banner.png";
 import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const { t } = useTranslation("contact");
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("contact", "hero", contactImage);
+
   return (
     <>
       <Helmet>
@@ -25,7 +29,7 @@ const Contact = () => {
         
         <div className="w-full h-64 md:h-96 relative overflow-hidden">
           <img 
-            src={contactImage} 
+            src={dynamicImage} 
             alt="Contact Us" 
             className="w-full h-full object-cover"
             loading="lazy"

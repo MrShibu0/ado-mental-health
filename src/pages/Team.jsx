@@ -4,10 +4,13 @@ import { PageHeader } from "../components/layout/PageHeader";
 import { team } from "../data/team";
 import { TeamCard } from "../components/ui/TeamCard";
 import { SectionTitle } from "../components/ui/SectionTitle";
+import { useImageCMS } from "../context/ImageCMSContext";
 import teamImage from "../Images/Team Section.png";
 
 const Team = () => {
   const { t } = useTranslation('team');
+  const { getSystemImage } = useImageCMS();
+  const dynamicImage = getSystemImage("team", "hero", teamImage);
   const departments = ["Leadership", "Clinical Team", "Community Team", "Administration", "Support Staff"];
 
   return (
@@ -25,7 +28,7 @@ const Team = () => {
         
         <div className="w-full h-64 md:h-96 relative overflow-hidden">
           <img 
-            src={teamImage} 
+            src={dynamicImage} 
             alt={t('imgAlt')} 
             className="w-full h-full object-cover"
             loading="lazy"

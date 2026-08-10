@@ -41,7 +41,15 @@ const getReferences = async (galleryItem) => {
     $or: [{ coverImage: targetUrl }, { coverImage: targetId }] 
   });
   newsItems.forEach(n => {
-    refs.push({ type: "News", name: n.title, page: "News", section: "Article", refId: n._id });
+    refs.push({ 
+      type: "News", 
+      name: `Article: ${n.title}`, 
+      page: "News", 
+      section: "Article", 
+      component: "ArticleView",
+      item: n.title,
+      refId: n._id.toString() 
+    });
   });
 
   // 2. Check Partners
@@ -49,7 +57,15 @@ const getReferences = async (galleryItem) => {
     $or: [{ logo: targetUrl }, { logo: targetId }] 
   });
   partners.forEach(p => {
-    refs.push({ type: "Partner", name: p.name, page: "Partners", section: "Logo", refId: p._id });
+    refs.push({ 
+      type: "Partner", 
+      name: `Partner Card: ${p.name}`, 
+      page: "Partners", 
+      section: "Logo", 
+      component: "PartnersGrid",
+      item: p.name,
+      refId: p._id.toString() 
+    });
   });
 
   // 3. Check PageContent
@@ -61,10 +77,27 @@ const getReferences = async (galleryItem) => {
         name: `${pc.page} - ${pc.section} (${pc.locale})`, 
         page: pc.page, 
         section: pc.section, 
-        refId: pc._id 
+        component: "PageContentSection",
+        item: pc.section,
+        refId: pc._id.toString() 
       });
     }
   });
+
+  // 4. Check system references defined on the Gallery item itself
+  if (galleryItem.usageType === "system" && galleryItem.usedOn && galleryItem.usedOn.length > 0) {
+    galleryItem.usedOn.forEach(ref => {
+      refs.push({
+        type: ref.type || "system",
+        name: ref.item || ref.component || ref.section || "System Resource",
+        page: ref.page,
+        section: ref.section,
+        component: ref.component,
+        item: ref.item,
+        refId: ref.refId || galleryItem.systemKey
+      });
+    });
+  }
 
   return refs;
 };
