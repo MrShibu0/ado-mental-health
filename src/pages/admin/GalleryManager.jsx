@@ -37,6 +37,7 @@ export default function GalleryManager() {
   const [previewItem, setPreviewItem] = useState(null);
   const [references, setReferences] = useState([]);
   const [loadingRefs, setLoadingRefs] = useState(false);
+  const [imageErrors, setImageErrors] = useState({});
 
   const [formData, setFormData] = useState({
     title: "",
@@ -583,13 +584,22 @@ export default function GalleryManager() {
                 <div 
                   onClick={() => handlePreviewClick(item)}
                   title="Click to preview details & usage"
-                  className="relative aspect-[4/3] bg-slate-800 overflow-hidden cursor-pointer"
+                  className="relative aspect-[4/3] bg-slate-800 overflow-hidden cursor-pointer flex items-center justify-center"
                 >
-                  <img 
-                    src={item.thumbnailUrl} 
-                    alt={item.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                  />
+                  {imageErrors[item._id] ? (
+                    <div className="flex flex-col items-center justify-center p-4 text-center text-slate-500">
+                      <AlertCircle className="w-8 h-8 text-red-500/80 mb-1" />
+                      <span className="text-[10px] font-bold text-slate-400">File Not Found</span>
+                      <span className="text-[8px] text-slate-550 mt-0.5">Click to replace on server</span>
+                    </div>
+                  ) : (
+                    <img 
+                      src={item.thumbnailUrl} 
+                      alt={item.title} 
+                      onError={() => setImageErrors(prev => ({ ...prev, [item._id]: true }))}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    />
+                  )}
                   {/* Category Tag */}
                   <span className="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-[10px] font-bold text-blue-400 border border-white/[0.04] uppercase tracking-wider">
                     {item.category}
@@ -1008,13 +1018,22 @@ export default function GalleryManager() {
         <div className="fixed inset-0 z-[60] bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-slate-900 border border-slate-800 w-full max-w-3xl rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto custom-scrollbar flex flex-col md:flex-row gap-6">
             {/* Image Preview Side */}
-            <div className="md:w-1/2 flex flex-col justify-center bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden p-2 relative">
-              <img
-                src={previewItem.imageUrl}
-                alt={previewItem.title}
-                className="w-full h-auto max-h-[50vh] md:max-h-[60vh] object-contain rounded-xl"
-              />
-              <div className="mt-4 flex gap-2">
+            <div className="md:w-1/2 flex flex-col justify-center bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden p-3 relative min-h-[220px] items-center">
+              {imageErrors[previewItem._id] ? (
+                <div className="flex flex-col items-center justify-center p-6 text-center text-slate-550">
+                  <AlertCircle className="w-10 h-10 text-red-550 mb-2" />
+                  <p className="text-xs font-bold text-slate-350">Physical file missing on server</p>
+                  <p className="text-[10px] text-slate-500 mt-1">Due to Render's ephemeral disk restarts, uploads are periodically cleared. Please upload a replacement image file below.</p>
+                </div>
+              ) : (
+                <img
+                  src={previewItem.imageUrl}
+                  alt={previewItem.title}
+                  onError={() => setImageErrors(prev => ({ ...prev, [previewItem._id]: true }))}
+                  className="w-full h-auto max-h-[50vh] md:max-h-[60vh] object-contain rounded-xl"
+                />
+              )}
+              <div className="mt-4 flex gap-2 w-full">
                 <label className="flex-grow py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors shadow-lg shadow-blue-600/10">
                   <ReplaceIcon className="w-3.5 h-3.5" />
                   Replace Image File

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Search, Image, Upload, X, Check } from "lucide-react";
+import { Search, Image, Upload, X, Check, AlertCircle } from "lucide-react";
 import toast from "react-hot-toast";
 
 const CATEGORIES = [
@@ -19,6 +19,7 @@ export const GallerySelector = ({ onSelect, currentUrl, onClose }) => {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [uploading, setUploading] = useState(false);
+  const [imageErrors, setImageErrors] = useState({});
 
   const fetchItems = async () => {
     setLoading(true);
@@ -162,11 +163,19 @@ export const GallerySelector = ({ onSelect, currentUrl, onClose }) => {
                       isSelected ? "border-blue-500 shadow-[0_0_12px_rgba(59,130,246,0.2)]" : "border-slate-800 hover:border-slate-700"
                     }`}
                   >
-                    <img
-                      src={item.thumbnailUrl || item.imageUrl}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                    {imageErrors[item._id] ? (
+                      <div className="w-full h-full flex flex-col items-center justify-center bg-slate-950 p-2 text-center text-slate-500">
+                        <AlertCircle className="w-6 h-6 text-red-500/80 mb-1" />
+                        <span className="text-[9px] font-bold text-slate-400">File Missing</span>
+                      </div>
+                    ) : (
+                      <img
+                        src={item.thumbnailUrl || item.imageUrl}
+                        alt={item.title}
+                        onError={() => setImageErrors(prev => ({ ...prev, [item._id]: true }))}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    )}
                     
                     {/* Checkmark overlay for selection */}
                     {isSelected && (
