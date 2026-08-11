@@ -584,6 +584,9 @@ export const seedSystemImages = async (superAdminId) => {
 
       // 1. Check if the system image is already seeded
       const existing = await Gallery.findOne({ systemKey: key });
+      const customFilename = "system_" + key.replace(/\./g, "_");
+      const folder = "gallery/system";
+
       if (existing) {
         // Enforce the enriched usedOn mapping metadata and other details
         existing.title = info.title;
@@ -597,16 +600,18 @@ export const seedSystemImages = async (superAdminId) => {
         // Verify physical files exist on this server's local filesystem
         const originalFilePath = path.join(process.cwd(), "server", existing.imageUrl);
         const thumbnailFilePath = path.join(process.cwd(), "server", existing.thumbnailUrl);
+        const hasStablePath = existing.imageUrl.includes("gallery/system/");
+        const filesExist = fs.existsSync(originalFilePath) && fs.existsSync(thumbnailFilePath);
 
-        if (fs.existsSync(originalFilePath) && fs.existsSync(thumbnailFilePath)) {
-          // Files exist, safe to skip
+        if (hasStablePath && filesExist) {
+          // Stable path and files exist, safe to skip
           continue;
         }
 
-        console.log(`🔧 Physical files missing on disk for ${key}. Re-generating assets...`);
+        console.log(`🔧 Physical files missing or path migration needed for ${key}. Re-generating assets...`);
         try {
           const fileBuffer = fs.readFileSync(sourcePath);
-          const processed = await processImage(fileBuffer, info.source, "gallery");
+          const processed = await processImage(fileBuffer, info.source, folder, customFilename);
 
           const mediaObj = await Media.findById(existing.mediaRef);
           if (mediaObj) {
@@ -632,7 +637,7 @@ export const seedSystemImages = async (superAdminId) => {
       const fileBuffer = fs.readFileSync(sourcePath);
 
       // Process image using processor (compresses and sizes to WEBP original + thumbnail)
-      const processed = await processImage(fileBuffer, info.source, "gallery");
+      const processed = await processImage(fileBuffer, info.source, folder, customFilename);
 
       // 2. Create Media record
       const media = await Media.create({
